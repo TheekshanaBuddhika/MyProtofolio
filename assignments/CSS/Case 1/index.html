@@ -5,11 +5,21 @@
     <link rel="stylesheet" href="browser_default_reset.css">
     <style>
     
-        
         body>main>section{
-           width: 100vw;
+            width: 100vw;
            height: 100vh;
            position: relative;
+        }
+    
+
+        body>main>section>div:first-child{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: auto;
+            height: 50vh;
+            width: 50vw;
+            background-color: red;
         }
 
         body>main>section>div:nth-child(2){
