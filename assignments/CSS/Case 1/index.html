@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="browser_default_reset.css">
     <style>
     
-
-        body>main>div:first-child{
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: auto;
-            height: 50vh;
-            width: 50vw;
-            background-color: red;
+        
+        body>main>section{
+           width: 100vw;
+           height: 100vh;
+           position: relative;
         }
 
-        body>main>div:nth-child(2){
+        body>main>section>div:nth-child(2){
             position: absolute;
             top: 0;
             right: 0;
@@ -25,7 +22,7 @@
             background-color: green;
         }
 
-        body>main>div:nth-child(3){
+        body>main>section>div:nth-child(3){
             position: absolute;
             bottom: 0;
             left: 0;
@@ -35,7 +32,7 @@
             background-color: orange;
         }
 
-        body>main>div:nth-child(4){
+        body>main>section>div:nth-child(4){
             position: absolute;
             bottom: 0;
             right: 0;
@@ -45,7 +42,7 @@
             background-color: pink;
         }
 
-        body>main>div:first-child>div{
+        body>main>section>div:first-child>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -58,7 +55,7 @@
             border-radius: 100%;
         }
 
-        body>main>div:first-child>div>div{
+        body>main>section>div:first-child>div>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -71,7 +68,7 @@
         }
 
 
-        body>main>div:nth-child(2)>div{
+        body>main>section>div:nth-child(2)>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -84,7 +81,7 @@
             border-radius: 100%;
         }
 
-        body>main>div:nth-child(2)>div>div{
+        body>main>section>div:nth-child(2)>div>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -96,7 +93,7 @@
             background-color: red;
         }
 
-        body>main>div:nth-child(3)>div{
+        body>main>section>div:nth-child(3)>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -109,7 +106,7 @@
             border-radius: 100%;
         }
 
-        body>main>div:nth-child(3)>div>div{
+        body>main>section>div:nth-child(3)>div>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -121,7 +118,7 @@
             background-color: red;
         }
 
-        body>main>div:nth-child(4)>div{
+        body>main>section>div:nth-child(4)>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -134,7 +131,7 @@
             border-radius: 100%;
         }
 
-        body>main>div:nth-child(4)>div>div{
+        body>main>section>div:nth-child(4)>div>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -146,7 +143,7 @@
             background-color: red;
         }
 
-        body>main>div:nth-child(5){
+        body>main>section>div:nth-child(5){
             position: absolute;
             top: 0;
             left: 0;
@@ -158,7 +155,7 @@
             background-color: white;
         }
 
-        body>main>div:nth-child(5)>div{
+        body>main>section>div:nth-child(5)>div{
             position: absolute;
             top: 0;
             left: 0;
@@ -171,7 +168,7 @@
             border-radius: 100%;
         }
 
-        body>main>div:nth-child(6){
+        body>main>section>div:nth-child(6){
             position: absolute;
             top: 0px;
             left: 0px;
@@ -181,7 +178,7 @@
             border-bottom-right-radius: 270%;
         }
 
-        body>main>div:nth-child(8){
+        body>main>section>div:nth-child(8){
             position: absolute;
             top: 0px;
             right: 0px;
@@ -191,7 +188,7 @@
             border-bottom-left-radius: 270%;
         }
 
-        body>main>div:nth-child(9){
+        body>main>section>div:nth-child(9){
             position: absolute;
             bottom: 0px;
             right: 0px;
@@ -201,7 +198,7 @@
             border-top-left-radius: 270%;
         }
 
-        body>main>div:nth-child(11){
+        body>main>section>div:nth-child(11){
             position: absolute;
             bottom: 0px;
             left: 0px;
@@ -211,7 +208,7 @@
             border-top-right-radius: 270%;
         }
 
-        body>main>div:nth-child(7){
+        body>main>section>div:nth-child(7){
             position: absolute;
             margin: auto;
             top: 0px;
@@ -223,7 +220,7 @@
             border-radius:0px 0px 150px 150px ;
         }
 
-        body>main>div:nth-child(10){
+        body>main>section>div:nth-child(10){
             position: absolute;
             margin: auto;
             bottom: 0px;
@@ -240,50 +237,99 @@
 </head>
 <body>
     <main>
-        <div>
+        <section>
             <div>
                 <div>
+                    <div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div>
+    
             <div>
                 <div>
+                    <div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div>
+    
             <div>
                 <div>
+                    <div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div>
+            
             <div>
                 <div>
+                    <div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div>
+    
+            <div>
+                <div></div>
+            </div>
+    
             <div></div>
-        </div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+        </section>
+        <section>
+            <div>
+                <div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div></div>
+            </div>
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+            <div></div>
+    
+        </section>
+       
 
     </main>
 </body>
