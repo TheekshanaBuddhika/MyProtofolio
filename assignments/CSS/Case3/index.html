@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="browser_default_reset.css">
+        <meta name="theme-color" content="#4361ee">
+        <meta name="robots" content="index,follow">
+    
+        <style>
+
+            section{
+                position: relative;
+                height: 100vh;
+                right: 0;
+                left: 0;
+            }
+
+            body>main>section>div{
+                height: 30vh;
+                width: 15vw;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background-color: red;
+            }
+
+            body>main>div:first-child{
+                height: 30vh;
+                width: 15vw;
+                border-radius: 100%;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                border: 15px solid gray;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <div>
+                <div></div>
+            </div>
+            <section><div></div></section>
+            <section><div></div></section>
+            <section><div></div></section>
+        </main>
+    </body>
+</html>
+    
