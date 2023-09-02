@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="browser_default_reset.css">
+        <meta name="theme-color" content="#4361ee">
+        <meta name="robots" content="index,follow">
+    
+        <style>
+
+            main{
+                position: relative;
+            }
+
+            section{
+                position: relative;
+                height: 100vh;
+                right: 0;
+                left: 0;
+            }
+
+            body>main>section:first-child{
+                background-color: white;
+            }
+
+            body>main>section:nth-child(2){
+                background-color: rgb(71, 154, 255);
+            }
+
+            body>main>section:nth-child(3){
+                background-color: rgb(180, 180, 180);
+            }
+
+            body>main>section:nth-child(4){
+                background-color: rgb(255, 87, 87);
+            }
+
+             body>main>section>div{
+                height: 50px;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+
+
+            body>main>section:first-child>div{
+                background-color: red;
+            }
+            
+            body>main>section:nth-child(2)>div{
+                background-color: blue;
+            }
+
+            body>main>section:nth-child(3)>div{
+                background-color: rgb(65, 65, 65);
+            }
+
+            body>main>section:nth-child(4)>div{
+                background-color: red;
+            }
+
+            
+            p{
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                margin: auto;
+                height: max-content;
+            }
+
+            body>main>section>div>p{
+                font-size: 2em;
+                color: white;
+            }
+
+            body>main>section>p{
+                color: black;
+                right: 0;
+                font-size: 20em;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <section>
+                <div>
+                    <p>Case 1</p>
+                </div>
+                <p>Hello</p>
+            </section>
+
+            <section>
+                <div>
+                    <p>Case 2</p>
+                </div>
+                <p>How</p>
+            </section>
+
+            <section>
+                <div>
+                    <p>Case 3</p>
+                </div>
+                <p>Are</p>
+            </section>
+
+            <section>
+                <div>
+                    <p>Case 4</p>
+                </div>
+                <p>You..?</p>
+            </section>
+
+        </main>
+    </body>
+</html>
+    
