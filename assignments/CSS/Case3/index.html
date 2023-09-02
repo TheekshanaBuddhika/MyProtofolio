@@ -9,6 +9,10 @@
     
         <style>
 
+            main{
+                position: relative;
+            }
+
             section{
                 position: relative;
                 height: 100vh;
@@ -26,7 +30,33 @@
                 top: 0;
                 bottom: 0;
                 margin: auto;
-                background-color: red;
+                z-index: 1;
+            }
+
+            body>main>section:nth-child(2)>div{
+                background-color: rgb(224, 122, 242);
+            }
+
+            body>main>section:nth-child(3)>div{
+                background-color: rgb(73, 182, 250);
+            }
+
+            body>main>section:nth-child(4)>div{
+                background-color: rgb(255, 179, 85);
+            }
+
+            body>main>section>div>p{
+                position: absolute;
+                height: max-content;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                text-align: center;
+                font-size: 2em;
+                color: #FFFFFF;
+                font-family: Georgia;
             }
 
             body>main>div:first-child{
@@ -39,9 +69,23 @@
                 top: 0;
                 bottom: 0;
                 margin: auto;
-                border: 15px solid gray;
+                border: 15px solid red;
+                z-index: 2;
             }
 
+            body>main>div:first-child>div{
+                height: 34vh;
+                width: 17vw;
+                border-radius: 100%;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                border: 15px solid gray;
+                z-index: 2;
+            }
         </style>
 
     </head>
@@ -50,9 +94,18 @@
             <div>
                 <div></div>
             </div>
-            <section><div></div></section>
-            <section><div></div></section>
-            <section><div></div></section>
+            <section><div>
+                <p>Hello</p>
+            </div></section>
+
+            <section><div>
+                <p>Welcome To</p>
+            </div></section>
+
+            <section><div>
+                <p>Institute of
+                Software Engineering</p>
+            </div></section>
         </main>
     </body>
 </html>
