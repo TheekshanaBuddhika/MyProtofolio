@@ -9,16 +9,10 @@
     
         <style>
 
-            main{
-                position: relative;
-            }
-
             img{
-                position: relative;
-                width: 25%;
+                width: 100%;
                 height: 100%;
                 float: left;
-                margin: auto;
                 transition:  .3s ease;
             }
 
@@ -29,11 +23,13 @@
             }
 
             div{
-                position: relative;
                 height: calc(100vh / 3);
-                right: 0;
-                left: 0;
-                margin: auto;
+            }
+
+            section{
+                display: grid;
+                grid-template-rows: repeat(3,1fr);
+                grid-template-columns: repeat(4,1fr);
             }
 
         </style>
@@ -41,27 +37,23 @@
     </head>
     <body>
         <main>
+            <section>
+                <div><img src="assets/aqua.png" alt="aqua"></div>
+                <div><img src="assets/blue.png" alt="aqua"></div>
+                <div> <img src="assets/blue_gray.png" alt="aqua"></div>
+                <div> <img src="assets/brown.png" alt="aqua"></div>
+                <div><img src="assets/dark_blue.jpeg" alt="aqua"></div>
+                <div><img src="assets/green.png" alt="aqua"></div>
+                <div> <img src="assets/light_purple.png" alt="aqua"></div>
+                <div> <img src="assets/orange.png" alt="aqua"></div>
+                <div><img src="assets/pink.png" alt="aqua"></div>
+                <div><img src="assets/purple.png" alt="aqua"></div>
+                <div><img src="assets/square.png" alt="aqua"></div>
+                <div><img src="assets/red.png" alt="aqua"></div>  
+            </section>
 
-            <div>
-                <img src="assets/aqua.png" alt="aqua">
-                <img src="assets/blue.png" alt="aqua">
-                <img src="assets/blue_gray.png" alt="aqua">
-                <img src="assets/brown.png" alt="aqua">
-            </div>
-
-            <div>
-                <img src="assets/dark_blue.jpeg" alt="aqua">
-                <img src="assets/green.png" alt="aqua">
-                <img src="assets/light_purple.png" alt="aqua">
-                <img src="assets/orange.png" alt="aqua">
-            </div>
-
-            <div>
-                <img src="assets/pink.png" alt="aqua">
-                <img src="assets/purple.png" alt="aqua">
-                <img src="assets/square.png" alt="aqua">
-                <img src="assets/red.png" alt="aqua">
-            </div>
+           
+            
                 
             
 
