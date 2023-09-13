@@ -1,3 +1,5 @@
+/* sidebar */
+
 .sidebar{
     position: fixed;
     z-index: 1;
@@ -31,6 +33,8 @@
     height: 8vh;
 }
 
+/* home */
+
 .intro{
     position: relative;
     right: 0;
@@ -38,6 +42,16 @@
     height: 100vh;
 }
 
-.intro>div:first-child>img{
-    height: 30vh;
+.intro>aside{
+    display: flex;
+}
+
+.intro>aside>img:first-child{
+    height: 20vh;
+    
+}
+
+.intro>aside>img:nth-child(2){
+    height: 70vh;
+    
 }
