@@ -50,7 +50,6 @@
 
 /* home */
 
-
 .intro>section{
     display: flex;
 }
@@ -85,6 +84,27 @@
     filter: drop-shadow(0px 5px 5px black);
     aspect-ratio: 1 / 1;
     margin-top: -40vh;
+}
+
+.intro>section>section:nth-child(3)>div:first-child>div{
+    height:8vh;
+    width: 30vh;
+    background-color: white;
+    filter: drop-shadow(0px 5px 5px black);
+}
+
+.intro>section>section:nth-child(3)>div:first-child>div:hover{
+    background-color: #4CC9F0;
+    filter: drop-shadow(0px 5px 5px white);
+}
+
+.intro>section>section:nth-child(3)>div:first-child>h3{
+    position: relative;
+    margin-top: -7vh;
+    margin-left: 15vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    z-index: 1;
 }
 
 /* footer */
