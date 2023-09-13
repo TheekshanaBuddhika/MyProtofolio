@@ -34,14 +34,16 @@
     height: 8vh;
 }
 
-/* home */
+/* main sections */
 
-.intro{
+.intro,.about,.expert,.experiences,.tech,.proj,.cont{
     position: relative;
     right: 0;
     left: 0;
     height: 100vh;
 }
+
+/* home */
 
 .intro>section,.intro>section>aside{
     display: flex;
