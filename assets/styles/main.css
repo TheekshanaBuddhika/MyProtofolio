@@ -45,25 +45,29 @@
 
 /* home */
 
+.intro>section{
+
+}
+
 .intro>section,.intro>section>aside{
     display: flex;
 }
 
-.intro>section>section{
+.intro>section>section:nth-child(2){
     display: grid;
     align-self: center;
 }
 
-.intro>section>aside>img:first-child{
+.intro>section>aside:first-child>img:first-child{
     height: 20vh; 
 }
 
-.intro>section>aside>img:nth-child(2){
+.intro>section>aside:first-child>img:nth-child(2){
     z-index: 1;
     height: 90vh; 
 }
 
-.intro>section>aside>div{
+.intro>section>aside:first-child>div{
     align-self: end;
     margin-left: -20vw;
     height: 44vh;
