@@ -5,7 +5,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    box-shadow: 1em 0px  black inset; 
+    box-shadow: 0.5em 0px  black inset; 
 }
 
 .sidebar>nav>li{
@@ -13,4 +13,5 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
