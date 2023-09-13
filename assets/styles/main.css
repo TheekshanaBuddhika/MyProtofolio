@@ -42,16 +42,31 @@
     height: 100vh;
 }
 
-.intro>aside{
+.intro>section,.intro>section>aside{
     display: flex;
 }
 
-.intro>aside>img:first-child{
-    height: 20vh;
-    
+.intro>section>section{
+    display: grid;
+    align-self: center;
 }
 
-.intro>aside>img:nth-child(2){
-    height: 70vh;
-    
+.intro>section>aside>img:first-child{
+    height: 20vh; 
+}
+
+.intro>section>aside>img:nth-child(2){
+    z-index: 1;
+    height: 90vh; 
+}
+
+.intro>section>aside>div{
+    align-self: end;
+    margin-left: -20vw;
+    height: 44vh;
+    width: 22vw;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    border: 2px solid black;
+    filter: drop-shadow(0px 5px 5px black);
 }
