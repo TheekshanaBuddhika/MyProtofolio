@@ -11,6 +11,7 @@
     background-color: white;
 }
 
+
 .sidebar>nav>li{
     display: flex;
     flex-direction: column;
@@ -20,10 +21,14 @@
     font-size: 1em;
 }
 
-.sidebar>nav>li:nth-child(5){
+.sidebar>nav>li:first-child>img{
+    height: 10vh;
+}
+
+.sidebar>nav>li:nth-child(6){
     margin-bottom: 10vh;
     margin-top: 10vh;
-    rotate: 90deg;
+    rotate: 270deg;
 }
 
 .sidebar>nav>li>a{
@@ -31,7 +36,7 @@
 }
 
 .sidebar>nav>li>a>img{
-    height: 8vh;
+    height: 5vh;
 }
 
 /* main sections */
@@ -45,37 +50,41 @@
 
 /* home */
 
+
 .intro>section{
-
-}
-
-.intro>section,.intro>section>aside{
     display: flex;
 }
 
-.intro>section>section:nth-child(2){
-    display: grid;
-    align-self: center;
+.intro>div:first-child,.intro>aside:nth-child(2),.intro>section:nth-child(3){
+    position: relative;
 }
 
-.intro>section>aside:first-child>img:first-child{
+
+.intro>section>section:nth-child(3){
+    display: grid;
+    align-self: center;
+    margin-left: 10vh;
+}
+
+.intro>section>div:first-child>img{
     height: 20vh; 
 }
 
-.intro>section>aside:first-child>img:nth-child(2){
+.intro>section>aside:nth-child(2)>img{
+    position: relative;
     z-index: 1;
     height: 90vh; 
 }
 
-.intro>section>aside:first-child>div{
-    align-self: end;
-    margin-left: -20vw;
-    height: 44vh;
-    width: 22vw;
-    border-radius: 100%;
+.intro>section>aside:nth-child(2)>div{
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
     background-color: #D9D9D9;
     border: 2px solid black;
     filter: drop-shadow(0px 5px 5px black);
+    aspect-ratio: 1 / 1;
+    margin-top: -40vh;
 }
 
 /* footer */
