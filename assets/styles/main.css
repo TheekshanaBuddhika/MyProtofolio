@@ -15,3 +15,11 @@
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
+
+.intro{
+    position: relative;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: red;
+}
