@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="browser_default_reset.css">
+        <meta name="theme-color" content="#4361ee">
+        <meta name="robots" content="index,follow">
+
+        <style>
+            div{
+                position: relative;
+                height: 70px;
+                width: 300px;
+                margin-top: 8vh;
+                background-color: purple;
+                transition-duration: 3s;
+                display: flex;
+                justify-content: space-between;
+                left: -200px;
+                align-items: center;
+            }
+
+            div:hover{
+                transition-property: all;
+                left: 0;
+            }
+
+            img{
+                position: absolute;
+                height: 60px;
+                width:60px;
+                right: 0;
+                display: inline-block;
+            }
+
+            div>h1{
+                position: absolute;
+                font-size: 20px;
+                padding-top: 30px;
+                left: 2vw;
+                display: inline-block;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div><h1>Contact</h1><img src="notebook.png"></div>
+           <div><h1>Ambulance</h1><img src="ambulance.png"></div>
+            <div><h1>bill</h1><img src="bill.png"></div>
+            <div><h1>payment</h1><img src="coin.png"></div>
+            <div><h1>Cart</h1><img src="cart.png"></div>
+        </main>
+    </body>
+</html>
