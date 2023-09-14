@@ -12,11 +12,16 @@
     z-index: 1;
 }
 
- .sidebar>img:first-child{
+.sidebar>img:first-child{
     position: relative;
     height: 8vh;
     margin-left: 3vw;
     
+}
+
+.sidebar>img:first-child:hover{
+    height: 9vh;
+    filter: drop-shadow(0px 3px 10px white);
 }
 
 .sidebar>nav{
@@ -36,19 +41,21 @@
     margin-right: 6vh;
 } 
 
+
 /* main sections */
 
-/* .intro,.about,.expert,.experiences,.tech,.proj,.cont{
+.intro,.about,.expert,.experiences,.tech,.proj,.cont{
     position: relative;
     right: 0;
     left: 0;
     height: 100vh;
-} */
+}
 
 /* home */
 
 /* .intro>section{
     display: flex;
+    border
 }
 
 .intro>div:first-child,.intro>aside:nth-child(2),.intro>section:nth-child(3){
