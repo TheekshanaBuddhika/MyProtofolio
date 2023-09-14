@@ -62,7 +62,7 @@
 .intro>section>section:nth-child(3){
     display: grid;
     align-self: center;
-    margin-left: 10vh;
+    margin-left: 25vh;
 }
 
 .intro>section>div:first-child>img{
