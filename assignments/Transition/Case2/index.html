@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="browser_default_reset.css">
+        <meta name="theme-color" content="#4361ee">
+        <meta name="robots" content="index,follow">
+
+        <style>
+
+    
+          div:first-child{
+            position: absolute;
+            display: flex;
+            border-radius: 100%;
+            height: 500px;
+            width: 500px;
+            background-color: gray;
+            border: 20px solid white;
+            border-top: 10px solid yellow;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+
+          div:first-child:hover{
+            transition-property: all;
+            transition-duration: 3s;
+            transform:rotate(360deg) ;
+          }
+
+          div:first-child:hover h1{
+            transition-property: all;
+            transition-duration: 3s;
+            transform:rotate(-360deg);
+          }
+
+          div:first-child>h1{
+            align-self: center;
+            justify-self: center;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        <main>
+           <div><h1>RWAD</h1></div>
+        </main>
+    </body>
+</html>
