@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="browser_default_reset.css">
-        <meta name="theme-color" content="#4361ee">
-        <meta name="robots" content="index,follow">
-
-        <style>
-
-    
-          div:first-child{
-            position: absolute;
+<head>
+    <meta charset="UTF-8">
+    <title>Transition | Case | 2</title>
+    <link rel="stylesheet" href="browser_default_reset.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <style>
+        body{
+            background-color: darkgray;
+            height: 100vh;
             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body>div{
+            width: 400px;
+            aspect-ratio: 1/1;
             border-radius: 100%;
-            height: 500px;
-            width: 500px;
-            background-color: gray;
-            border: 20px solid white;
-            border-top: 10px solid yellow;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            background-color: rgb(152, 152, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 30px solid rgb(236, 72, 236);
+            border-top: 30px solid rgb(116, 0, 116);
             margin: auto;
-          }
+        }
 
-          div:first-child:hover{
+        body>div:hover{
             transition-property: all;
-            transition-duration: 3s;
-            transform:rotate(360deg) ;
-          }
+            transition-duration:3s;
+            transform: rotate(360deg);
+        }
 
-          div:first-child:hover h1{
+        body>div>h1{
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        body>div:hover h1{
             transition-property: all;
-            transition-duration: 3s;
-            transform:rotate(-360deg);
-          }
+            transition-duration:3s;
+            transform: rotate(-360deg);
+        }
 
-          div:first-child>h1{
-            align-self: center;
-            justify-self: center;
-            margin: auto;
-          }
-        </style>
-    </head>
-    <body>
-        <main>
-           <div><h1>RWAD</h1></div>
-        </main>
-    </body>
+    </style>
+</head>
+<body>
+<div><h1>RWAD</h1></div>
+</body>
 </html>
