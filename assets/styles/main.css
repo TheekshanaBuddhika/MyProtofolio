@@ -14,10 +14,10 @@
 
  .sidebar>img:first-child{
     position: relative;
-    height: 20vh;
+    height: 8vh;
+    margin-left: 3vw;
     
 }
-
 
 .sidebar>nav{
     position: relative;
@@ -28,7 +28,7 @@
 
 .sidebar>nav>li>a{
     color: white;
-    font-family: Inria Sans;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
