@@ -103,7 +103,7 @@
     position: relative;
     margin-top: -7vh;
     margin-left: 15vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Helvetica;
     font-size: 3em;
     z-index: 1;
 }
