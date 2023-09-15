@@ -1,3 +1,9 @@
+
+/* all link references */
+a{
+    text-decoration: none;
+}
+
 /* navigation bar */
 
 .sidebar{
@@ -36,7 +42,6 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    text-decoration: none;
     margin-left: 21vh;
     margin-right: 6vh;
 } 
@@ -53,21 +58,63 @@
 
 /* home */
 
-.intro>section:nth-child(2){
+.inner_intro{
     display: flex;
     background-color: black;
     border-radius: 0px 0px 378px 0px;
     height: 100%;
-    padding-top: 15vh;
 }
 
-.intro>section:nth-child(2)>section:first-child,.intro>section:nth-child(2)>aside:nth-child(2){
+.inner_intro>section:first-child,.inner_intro>aside:nth-child(2){
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 
+.inner_intro>section:first-child>div:nth-child(6){
+    display: flex;
+}
+
+.inner_intro>section:first-child>div:nth-child(6)>a>img{
+    height: 4vh;
+}
+
+.inner_intro>aside:nth-child(2)>img:nth-child(2){
+   position: absolute;
+   height: 80vh;
+   border-radius: 0px 0px 178.16px 0px;
+}
+
+.inner_intro>aside:nth-child(2)>div:first-child>img:nth-child(3){
+    position: relative;
+    height: 50vh;
+ }
+
+ 
 
 /* footer */
-/* .base{
+.base{
     display: flex;
-} */
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2vh;
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.base>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.base>div>img{
+    height: 7vh;
+}
+
+.base>div>a{
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
