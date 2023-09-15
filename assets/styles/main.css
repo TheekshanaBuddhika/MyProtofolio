@@ -53,12 +53,30 @@
 
 /* home */
 
-.intro>section{
+.intro>section:nth-child(2){
     display: flex;
     background-color: black;
     border-radius: 0px 0px 378px 0px;
     height: 100%;
 }
+
+.intro>section:nth-child(2)>section:first-child{
+
+}
+
+.intro>section:nth-child(2)>aside:nth-child(2){
+    
+}
+
+.intro>section:nth-child(2)>aside:nth-child(2)>div:first-child{
+    
+}
+
+.smallcircle{
+  
+}
+
+
 
 /* footer */
 /* .base{
