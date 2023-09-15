@@ -26,8 +26,7 @@ p{
 .sidebar>img:first-child{
     position: relative;
     height: 8vh;
-    margin-left: 3vw;
-    
+    margin-left: 3vw;   
 }
 
 .sidebar>img:first-child:hover{
@@ -38,8 +37,8 @@ p{
 .sidebar>nav{
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 60vw;
 }
 
 .sidebar>nav>li>a{
@@ -47,9 +46,21 @@ p{
     font-family: sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-left: 21vh;
-    margin-right: 6vh;
 } 
+
+.sidebar>nav>li{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.sidebar>nav>li:hover{
+    box-shadow: inset 0 -1vh 0 white;
+}
+
 
 
 /* main sections */
