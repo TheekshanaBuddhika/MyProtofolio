@@ -114,7 +114,65 @@ p{
     margin-top: 15vh;
 }
 
-.inner_intro>section:nth-child(2)>div:nth-child(4){
+    
+.inner_intro>section:nth-child(2)>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 25vh;
+}
+
+    /* polygon containers */
+
+.inner_intro>section:nth-child(2)>div:first-child>div:first-child,.inner_intro>section:nth-child(2)>div:first-child>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.inner_intro>section:nth-child(2)>div:first-child>div>img{
+    filter: drop-shadow(1vh 1vh 0.5vh rgba(255, 255, 255, 0.25));
+}
+
+/* first polygon set */
+
+.inner_intro>section:nth-child(2)>div:first-child>div:first-child>img:first-child{
+    align-self: flex-start;
+    height:12vh;
+}
+
+.inner_intro>section:nth-child(2)>div:first-child>div:first-child>img:nth-child(2){
+    align-self: flex-end;
+    height:8vh;
+}
+
+.inner_intro>section:nth-child(2)>div:first-child>div:first-child>img:nth-child(3){
+    align-self: center;
+    height:6vh;
+}
+
+    /* second polygon set */
+
+.inner_intro>section:nth-child(2)>div:first-child>div:nth-child(2){
+    height: 20vh;
+}
+
+.inner_intro>section:nth-child(2)>div:first-child>div:nth-child(2)>img:first-child{
+    align-self: center;
+    height:8vh;
+}
+
+.inner_intro>section:nth-child(2)>div:first-child>div:nth-child(2)>img:nth-child(2){
+    align-self: flex-end;
+    height:7vh;
+}
+
+.inner_intro>section:nth-child(2)>div:first-child>div:nth-child(2)>img:nth-child(3){
+    align-self: flex-start;
+    height:9vh;
+}
+
+.inner_intro>section:nth-child(2)>div:nth-child(5){
     width: 30vw;
     display: flex;
     align-items: center;
@@ -122,13 +180,13 @@ p{
     border-left: 1vh solid white;
 }
 
-.inner_intro>section:nth-child(2)>h3:first-child,.inner_intro>section:nth-child(2)>h1:nth-child(2),.inner_intro>:nth-child(2)>div:nth-child(4)>p{
+.inner_intro>section:nth-child(2)>h3:nth-child(2),.inner_intro>section:nth-child(2)>h1:nth-child(3),.inner_intro>section:nth-child(2)>div:nth-child(5)>p{
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
 }
 
-.inner_intro>section:nth-child(2)>div:nth-child(3){
+.inner_intro>section:nth-child(2)>div:nth-child(4){
     height: 10vh;
     width: 30vw;
     background-color: white;
@@ -137,13 +195,14 @@ p{
     border-radius: 0px 30px 30px 60px;
 }
 
-.inner_intro>section:nth-child(2)>div:nth-child(6){
+.inner_intro>section:nth-child(2)>div:nth-child(7){
     width:20vw;
     display: flex;
     justify-content: space-evenly;
+    align-self: flex-end;
 }
 
-.inner_intro>section:nth-child(2)>div:nth-child(6)>a>img{
+.inner_intro>section:nth-child(2)>div:nth-child(7)>a>img{
     height: 5vh;
 }
 
