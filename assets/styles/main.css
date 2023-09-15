@@ -7,6 +7,7 @@ a{
 /* all paragraphs */
 p{
     text-align: center;
+    font-size: 2.5vh;
 }
 
 /* navigation bar */
@@ -82,7 +83,6 @@ p{
 }
 
 .inner_intro>section:nth-child(2){
-    justify-content: center;
     align-items: center;
     z-index: 3;
 }
@@ -109,8 +109,8 @@ p{
     position: relative;
     display: flex;
     flex-direction: column;
-    width:50vw;
-    height:85vh;
+    width: 50vw;
+    height: 85vh;
     margin-top: 15vh;
 }
 
@@ -119,7 +119,8 @@ p{
     display: flex;
     justify-content: space-between;
     width: 50vw;
-    height: 25vh;
+    height: 22vh;
+    margin-top: 3vh;
 }
 
     /* polygon containers */
@@ -127,7 +128,7 @@ p{
 .inner_intro>section:nth-child(2)>div:first-child>div:first-child,.inner_intro>section:nth-child(2)>div:first-child>div:nth-child(2){
     display: flex;
     justify-content: space-between;
-    width: 20vw;
+    width: 16vw;
 }
 
 .inner_intro>section:nth-child(2)>div:first-child>div>img{
@@ -172,27 +173,51 @@ p{
     height:9vh;
 }
 
+    /* paragraph container */
+
 .inner_intro>section:nth-child(2)>div:nth-child(5){
     width: 30vw;
     display: flex;
     align-items: center;
     justify-content: center;
     border-left: 1vh solid white;
+    margin-top: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .inner_intro>section:nth-child(2)>h3:nth-child(2),.inner_intro>section:nth-child(2)>h1:nth-child(3),.inner_intro>section:nth-child(2)>div:nth-child(5)>p{
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
+    margin: 0;
 }
 
+.inner_intro>section:nth-child(2)>h1:nth-child(3){
+    font-size:8vh;
+}
+
+.inner_intro>section:nth-child(2)>h3:nth-child(2){
+    font-size:3vh;
+}
+
+    /* white container */
+
 .inner_intro>section:nth-child(2)>div:nth-child(4){
-    height: 10vh;
+    height: 12vh;
     width: 30vw;
     background-color: white;
     display: flex;
     justify-content: center;
     border-radius: 0px 30px 30px 60px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    align-items: center;
+}
+
+
+.inner_intro>section:nth-child(2)>div:nth-child(4)>h1{
+    font-size: 3rem;
 }
 
 .inner_intro>section:nth-child(2)>div:nth-child(7){
@@ -202,9 +227,33 @@ p{
     align-self: flex-end;
 }
 
-.inner_intro>section:nth-child(2)>div:nth-child(7)>a>img{
+
+.inner_intro>section:nth-child(2)>div:nth-child(6)>a>button{
+    width:8vw;
+    background-color: transparent;
+    border: 0.5vh solid white;
+    color: white;
+    font-family: sans-serif;
+    padding: 0.8vh;
+    margin-top: 6vh;
+}
+
+.inner_intro>div:nth-child(5){
+    position: absolute;
+    bottom: 2vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+.inner_intro>div:nth-child(5)>a>img{
+    margin-top: 2vh;
     height: 5vh;
 }
+
 
 .inner_intro>aside:nth-child(3)>div:first-child{
     display: flex;
