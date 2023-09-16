@@ -67,7 +67,7 @@ p{
 
 /* main sections */
 
-.inner_intro,.about,.expert,.experiences,.tech,.proj,.cont{
+.inner_intro,.about,.expert,.experiences,.tech,.proj,.cont,.memo{
     position: relative;
     right: 0;
     left: 0;
@@ -993,6 +993,19 @@ p{
     z-index: 1;
 }
 
+/* Memories */
+
+.memo{
+    background-color: black;
+}
+
+.memo>section:first-child{
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    border-radius: 0 40vh 40vh 0;
+    display: flex;
+}
 /* footer */
 .base{
     display: flex;
