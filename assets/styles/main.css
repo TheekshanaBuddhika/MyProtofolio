@@ -820,6 +820,94 @@ p{
     filter: drop-shadow(2px 4px 6px black);
 }
 
+/* Tools */
+.tech{
+    background-color: black;
+    border-radius: 0 40vh 40vh 0;
+}
+
+.tech>section:first-child{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech>section:first-child>section:first-child{
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech>section:first-child>section:first-child>div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #CBCBCB 50%, transparent 50%);
+    height: 6vh;
+    width: 24vw;
+}
+
+.tech>section:first-child>section:first-child>div:first-child>h3{
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.tech>section:first-child>section:nth-child(2){
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    margin-top: 15vh;
+}
+
+.tech>section:first-child>section:nth-child(2)>div:first-child>img,.tech>section:first-child>section:nth-child(2)>div:nth-child(3)>img{
+    height: 30vh;
+}
+
+.tech>section:first-child>section:nth-child(2)>div:nth-child(2)>img{
+    height: 50vh;
+}
+
+.tech>section:first-child>section:nth-child(3){
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 17vh;
+}
+
+.tech>section:first-child>section:nth-child(3)>div{
+    display: flex;
+    justify-content: space-around;
+    width: 23vw;
+}
+
+.tech>section:first-child>section:nth-child(3)>div>img{
+    filter: drop-shadow(2px 4px 6px #CBCBCB);
+}
+
+.tech>section:first-child>section:nth-child(3)>div:first-child>img:first-child,.tech>section:first-child>section:nth-child(3)>div:nth-child(2)>img:nth-child(3){
+    height: 10vh;
+    align-self: flex-start;
+}
+
+.tech>section:first-child>section:nth-child(3)>div:first-child>img:nth-child(2),.tech>section:first-child>section:nth-child(3)>div:nth-child(2)>img:nth-child(2){
+    height: 12vh;
+    align-self: center;
+}
+
+.tech>section:first-child>section:nth-child(3)>div:first-child>img:nth-child(3),.tech>section:first-child>section:nth-child(3)>div:nth-child(2)>img:nth-child(1){
+    height: 14vh;
+    align-self: flex-end;
+}
 
 /* footer */
 .base{
