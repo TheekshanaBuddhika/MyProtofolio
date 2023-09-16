@@ -909,6 +909,90 @@ p{
     align-self: flex-end;
 }
 
+
+/* projects */
+
+.proj{
+    background-color: black;
+}
+
+.proj>section:nth-child(2){
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    border-radius: 40vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.proj>section:nth-child(2)>section:first-child{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj>section:nth-child(2)>section:first-child>div:first-child{
+    display: flex;
+    background: linear-gradient(to top, #CBCBCB 50%, transparent 50%);
+    width: 21vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj>section:nth-child(2)>section:first-child>div:first-child>h3{
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.proj>section:nth-child(2)>section:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.proj>section:nth-child(2)>section:nth-child(2)>div:first-child{
+    z-index: 2;
+}
+
+.proj>section:nth-child(2)>section:nth-child(2)>div:first-child>img:first-child{
+    height: 55vh;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.proj>section:nth-child(2)>section:nth-child(3){
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 10vh;
+}
+
+.proj>section:nth-child(2)>section:nth-child(3)>a>button{
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    border: 0.5vh solid white;
+    padding: 1vh;
+    font-size: 2vh;
+}
+
+.proj>section:nth-child(2)>img:nth-child(4){
+    height: 54vh;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
 /* footer */
 .base{
     display: flex;
