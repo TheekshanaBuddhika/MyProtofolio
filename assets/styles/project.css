@@ -42,7 +42,10 @@ a{
 
 .proj_home{
     height: 100vh;
+    background-color: black;
     position: relative;
+    border-radius: 0 0 40vh 0;
+    display: flex;
 }
 
 /* footer */
