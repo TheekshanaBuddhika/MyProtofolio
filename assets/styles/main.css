@@ -1014,7 +1014,7 @@ p{
 }
 
 .memo>section:first-child>div:first-child>img{
-    height: 95vh;
+    height: 100%;
     filter: grayscale(100%);
 }
 
@@ -1075,6 +1075,115 @@ p{
 
 
 /* Contacts */
+
+.cont{
+    background-color: black;
+    display: flex;
+}
+
+.cont>img:nth-child(2){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+}
+
+.cont>section:nth-child(3){
+    width: 31.5vw;
+}
+
+.cont>section:nth-child(4){
+    width: 67vw;
+}
+
+.cont>section:nth-child(3),.cont>section:nth-child(4){
+    position: relative;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont>section:nth-child(3)>div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21vw;
+}
+
+.cont>section:nth-child(3)>div:first-child>h2{
+    
+    margin: 0;
+    font-size: 5vh;
+    color: white;
+    filter: drop-shadow(2px 4px 6px white);
+    margin-bottom: 3vh;
+    text-align: center;
+
+}
+
+.cont>section:nth-child(3)>div:nth-child(2)>div:first-child{
+    position: relative;
+    display: flex;
+    height: 45vh;
+    border: 3vh solid white;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(0.5vh 1vh 1vh white);
+}
+
+.cont>section:nth-child(3)>div:nth-child(2)>div:first-child>img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cont>section:nth-child(3)>div:nth-child(2)>div:first-child>img:first-child{
+    height: 54vh;
+    border-radius: 0 0 23vh 8vh;
+    z-index: 3;
+}
+
+.cont>section:nth-child(3)>div:nth-child(2)>div:first-child>img:nth-child(2){
+    height:40vh;
+    border-radius: 0 0 23vh 0;
+}
+
+.cont>section:nth-child(4)>h3:first-child{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 7vh;
+    margin-bottom: 10vh;
+    filter: drop-shadow(2px 4px 6px white);
+}
+
+            /*Contact form */
+
+.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}        
+
+.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child>button:nth-child(5){
+    margin-top: 3vh;
+    background: transparent;
+    color: white;
+    border: 0.5vh solid white;
+    padding: 1vh;
+    width: 11vw;
+    align-self: center;
+}
+
+.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child>input,.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child>textarea{
+    margin-top: 2vh;
+}
 
 /* footer */
 .base{
