@@ -48,6 +48,13 @@ a{
     display: flex;
 }
 
+.home_proj_view{
+    background: url("/assets/images/logos/css-3.png");
+    height: 40vh;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
 /* footer */
 
 .base{

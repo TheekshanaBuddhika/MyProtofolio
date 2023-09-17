@@ -7,15 +7,88 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
     <style>
 
+        /* ---------------- html body ----------------- */
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+            height: 100vh;
+        }
+
+        /* --------------all div ------------------ */
+        div{
+            border-radius: 5vh;
+        }
+
+        /* ------------ main container ------------ */
+
+        .container{
+            position: relative;
+            background: url("assests/download\ \(1\).jpeg");
+            background-size: cover;
+            height: 50vh;
+            aspect-ratio: 1/1;
+            filter: drop-shadow(5px 2px 7px black);
+            overflow: hidden;
+        }
+
+        /* -------------------- div inside main container------------------------ */
+
+        .container>div{
+            width: 100%;
+            position: absolute;
+            transition-duration: 1s;
+        }
+
+        /* -----------mist layer ------------------- */
+        .mist{
+            height: 0;
+            bottom: 0;
+            opacity: 0.5;
+            background-color: black;
+        }
+
+        /* ----------------------- bin container----------------------------- */
+
+        .bin-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: -50vh;
+            height: 100%;
+            background-color: transparent;
+            
+        }
+      
+        /* -----------bin image ------------- */
+
+        .bin-container>img{
+            position: relative;
+            height: 10vh;
+            aspect-ratio: 1/1;
+        }
+
+        /* -----------------------transition effects---------------------------- */
+
+        .container:hover .mist{
+            height: 100%;
+            transition-duration: 1s;
+        }
+
+        .container:hover .bin-container{
+            top: 0;
+            transition-duration: 1s;
+        }
 
     </style>
 </head>
 <body>
-    <main>
-        <div>
-            <img src="assests/red-luxury-sedan-road.jpg" alt="car" >
-            <div></div>
+    <div class="container">
+        <div class="mist"></div>
+        <div class="bin-container">
+            <img src="assests/trash-can (1).png" alt="bin">
         </div>
-    </main>
+    </div> 
 </body>
 </html>
