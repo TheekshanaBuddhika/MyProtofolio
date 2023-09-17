@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition | Case 3</title>
+    <link rel="stylesheet" href="browser_default_reset.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <style>
+
+        /* ---------------- html body ----------------- */
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(140, 162, 181);
+            height: 100vh;
+        }
+
+        /* -----main circle-------- */
+
+        .main-circle{
+            position: relative;
+            border-radius: 50%;
+            height: 50vh;
+            aspect-ratio: 1/1;
+            background-color: black;
+            border: 3vh solid white;
+            border-top: 3vh solid red;
+        }
+
+        /* -------- semi circle ------- */
+
+        .inner-line{
+            height: 50%;
+            position: absolute;
+            top: 3vh;
+            right: 16vh;
+            width: 3vh;
+            background-color: red;
+            margin: auto;
+            transform: rotate(40deg);   
+        }
+
+        /* ------------------------- dot ------------------- */
+
+        .dot{
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            height: 7vh;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            right: 28px;
+            top: 1vh;
+        }
+
+        /* ---------------transition ------------------- */
+
+        .main-circle:hover{
+            transition: all 2s ;
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-circle">
+        <div class="inner-line"></div>
+        <div class="dot"></div>
+    </div> 
+</body>
+</html>
