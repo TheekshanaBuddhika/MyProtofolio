@@ -1,0 +1,75 @@
+/* all links */
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+.header{
+    height: 10vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    background-color: black;
+    right: 0;
+    align-items: center;
+    z-index: 100;
+}
+
+.header>button{
+    position: relative;
+    height: 8vh;
+    background-color: transparent;
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+}
+
+.header>button:hover{
+    filter: drop-shadow(0vh 0 1vh white);
+}
+
+.header>button>a>img{
+    height: 7vh;
+}
+
+/* home screen */
+
+.proj_home{
+    height: 100vh;
+    position: relative;
+}
+
+/* footer */
+
+.base{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2vh;
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.base>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh;
+}
+
+.base>div>img{
+    height: 7vh;
+}
+
+.base>div>a{
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
