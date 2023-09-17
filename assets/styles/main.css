@@ -1200,6 +1200,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1vh;
 }
 
 .base>div>img{
