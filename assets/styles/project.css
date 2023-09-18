@@ -11,7 +11,7 @@ a{
     position: absolute;
     left: 0;
     display: flex;
-    background-color: black;
+    background-color: transparent;
     right: 0;
     align-items: center;
     z-index: 100;
@@ -47,40 +47,46 @@ a{
     border-radius: 0 0 40vh 0;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-.proj_home>div:first-child{
+video{
+    width: 100%;
+    position: absolute;
+}
+
+.polygon-container{
     display: flex;
     align-items: flex-end;
     width: 22.5vw;
 }
 
-.proj_home>div:first-child>div:first-child{
+.polygon-container>div:first-child{
     height: 36vh;
     width: 33vh;
     margin-bottom: 5vh;
     display: flex;
 }
 
-.proj_home>div:first-child>div:first-child>img{
+.polygon-container>div:first-child>img{
     filter: drop-shadow(0.5vh 0.5vh 1vh white);
 }
 
-.proj_home>div:first-child>div:first-child>img:first-child{
+.polygon-container>div:first-child>img:first-child{
     height: 10vh;
     align-self: flex-start;
 }
 
-.proj_home>div:first-child>div:first-child>img:nth-child(2){
+.polygon-container>div:first-child>img:nth-child(2){
     height: 15vh;
     align-self: center;
 }
-.proj_home>div:first-child>div:first-child>img:nth-child(3){
+.polygon-container>div:first-child>img:nth-child(3){
     height: 13vh;
     align-self: flex-end;
 }
 
-.proj_home>section:nth-child(2){
+.middle-container{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -88,47 +94,41 @@ a{
     justify-content: center;
 }
 
-.proj_home>section:nth-child(2)>h1:first-child{
+.middle-container>h1:first-child{
     color: white;
     text-align: center;
-    font-size: 7vh;
-    width: 44vh;
+    font-size: 13vh;
+    width: 70vh;
     filter: drop-shadow(0 0 0.3vh white);
     margin: 0;
 }
 
-.home_proj_view{
-    background: url(../assets/images/logos/css-3.png);
-    height: 45vh;
-    background-size: cover;
-    width: 39vw;
-    margin-top: 2vh;
-}
-
-.proj_home>section:nth-child(2)>div:nth-child(3){
+.button-container{
     display: flex;
     margin-top: 8vh;
     width: 50vw;
     justify-content: space-evenly;
 }
 
-.proj_home>section:nth-child(2)>div:nth-child(3)>button{
-    height: 7vh;
-    width: 10vw;
+.button-container>button{
+    
+    height: 12vh;
+    width: 19vw;
     background: transparent;
     border: 1vh solid white;
     color: white;
-    font-size: larger;
+    font-size: 5vh;
     font-family: sans-serif;
+    z-index: 2;
 }
 
-.proj_home>div:nth-child(3){
+.end-container{
     display: flex;
     align-items: center;
     width: 22.5vw;
 }
 
-.proj_home>div:nth-child(3)>img{
+.end-container>img{
     height: 42vh;
     filter: grayscale(100%);
 }
