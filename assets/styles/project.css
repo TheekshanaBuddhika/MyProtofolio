@@ -46,13 +46,91 @@ a{
     position: relative;
     border-radius: 0 0 40vh 0;
     display: flex;
+    justify-content: space-between;
+}
+
+.proj_home>div:first-child{
+    display: flex;
+    align-items: flex-end;
+    width: 22.5vw;
+}
+
+.proj_home>div:first-child>div:first-child{
+    height: 36vh;
+    width: 33vh;
+    margin-bottom: 5vh;
+    display: flex;
+}
+
+.proj_home>div:first-child>div:first-child>img{
+    filter: drop-shadow(0.5vh 0.5vh 1vh white);
+}
+
+.proj_home>div:first-child>div:first-child>img:first-child{
+    height: 10vh;
+    align-self: flex-start;
+}
+
+.proj_home>div:first-child>div:first-child>img:nth-child(2){
+    height: 15vh;
+    align-self: center;
+}
+.proj_home>div:first-child>div:first-child>img:nth-child(3){
+    height: 13vh;
+    align-self: flex-end;
+}
+
+.proj_home>section:nth-child(2){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+}
+
+.proj_home>section:nth-child(2)>h1:first-child{
+    color: white;
+    text-align: center;
+    font-size: 7vh;
+    width: 44vh;
+    filter: drop-shadow(0 0 0.3vh white);
+    margin: 0;
 }
 
 .home_proj_view{
-    background: url("/assets/images/logos/css-3.png");
-    height: 40vh;
-    background-attachment: fixed;
-    background-size: contain;
+    background: url(../assets/images/logos/css-3.png);
+    height: 45vh;
+    background-size: cover;
+    width: 39vw;
+    margin-top: 2vh;
+}
+
+.proj_home>section:nth-child(2)>div:nth-child(3){
+    display: flex;
+    margin-top: 8vh;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+.proj_home>section:nth-child(2)>div:nth-child(3)>button{
+    height: 7vh;
+    width: 10vw;
+    background: transparent;
+    border: 1vh solid white;
+    color: white;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+.proj_home>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    width: 22.5vw;
+}
+
+.proj_home>div:nth-child(3)>img{
+    height: 42vh;
+    filter: grayscale(100%);
 }
 
 /* footer */
