@@ -140,6 +140,20 @@ video{
     filter: grayscale(100%);
 }
 
+.top-arrow>a>img , .top-arrow>a , .top-arrow{
+    position: fixed;
+    height: 5vh;
+    display: inline-block;
+    z-index: 2;
+    right: 2vh;
+    bottom: 2vh;
+}
+
+.top-arrow:hover{
+    filter: drop-shadow(0vh 0vh 1vh gray);
+}
+
+
 /* ------------------- project and assignments------------------ */
 
 .block-container{
@@ -195,41 +209,51 @@ video{
     border-radius: 3vh 0 0 3vh;
 }
 
+.right-section{
+    justify-content: space-evenly;
+}
+
 .img-container{
     height: 70%;
     width: 90%;
     position: relative;
-    background-color: aqua;
+    background-color: transparent;
     overflow: hidden;
     filter: drop-shadow(2px 4px 6px black);
-    background: url("../images/projects/cocos.png");
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.img-container>img{
+    width: 100%;
 }
 
 .left-section>h1{
     font-size: 2vw;
     margin-top: 0;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .right-section>h1{
     font-size: 3vw;
     margin: 0;
     font-family: sans-serif;
-    margin-top: 7vh;
-    margin-bottom: 7vh;
     filter: drop-shadow(2px 4px 1vh black);
 }
 
 .right-section>h2{
+    font-family: sans-serif;
     margin: 0;
     text-align: center;
     width: 70%;
     font-size: 3vh;
+    position: relative;
 }
 
 .sec-button {
     position: relative;
-    top: 13vh;
 }
 
 .sec-button>a{
@@ -244,6 +268,7 @@ video{
     border: 0.5vh solid black;
     box-shadow: 0.1vh 0.1vh 1vh black;
     background: transparent;
+    font-family: sans-serif;
 }
 
 
