@@ -119,7 +119,14 @@ video{
     color: white;
     font-size: 5vh;
     font-family: sans-serif;
+    font-weight: bold;
     z-index: 2;
+}
+
+.button-container>button:hover{
+    background: white;
+    border: 1vh solid #CBCBCB;
+    color: black;
 }
 
 .end-container{
