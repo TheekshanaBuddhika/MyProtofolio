@@ -140,6 +140,33 @@ video{
     filter: grayscale(100%);
 }
 
+/* ------------------- project and assignments------------------ */
+
+.block-container{
+    position:relative;
+    left:0;
+    right: 0;
+    display: flex;
+}
+
+.projects , .assignments , .projects-main , .assignments-main{
+    width: 100%;
+    position: relative;
+}
+
+.projects{
+    display: none;
+}
+
+.assignments-main,.projects-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
 /* footer */
 
 .base{
