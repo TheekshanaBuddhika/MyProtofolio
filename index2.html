@@ -19,6 +19,9 @@
     <link rel="canonical" href="https://www.example.com/">
     <link rel="stylesheet" href="assets/styles/project.css">
     <link rel="stylesheet" href="assets/styles/browser_default_reset.css">
+
+    
+    
 </head>
 <body>
   <!--user viewable content start in this section-->
@@ -51,8 +54,8 @@
       <section class="middle-container">
         <h1>Projects & Assignments</h1>
         <div class="button-container">
-          <button class="proj-btn">Projects</button>
-          <button class="assingn-btn">Assignments</button>
+          <button id="proj_btn">Projects</button>
+          <button id="assign_btn">Assignments</button>
         </div>
       </section>
 
@@ -70,7 +73,7 @@
 
     <section class="block-container">
 
-      <section class="assignments">
+      <section class="assignments" id="assignments">
         <section class="assignments-main">
 
           <section class="block">
@@ -227,9 +230,38 @@
         </section>
       </section>
 
-      <section class="projects">
-        <section class="project-main">
-
+      <section class="projects" id="projects">
+        <section class="projects-main">
+          <section class="block">
+            <div class="left-section">
+              <div class="img-container">
+                <img src="assets/images/projects/Assignment1.png" alt="assignment1">
+              </div>
+              <h1>Assignment 1</h1>
+            </div>
+            <div class="right-section">
+              <h1>Positions</h1>
+              <h2>Using basic knowledge about css positions designing a colorful art</h2>
+              <div class="sec-button">
+                <a href="assignments/CSS/Case 1/index.html" target="_blank"><button>View More</button></a>
+              </div>
+            </div>
+          </section>
+          <section class="block">
+            <div class="left-section">
+              <div class="img-container">
+                <img src="assets/images/projects/Assignment2.png" alt="assignment2">
+              </div>
+              <h1>Assignment 2</h1>
+            </div>
+            <div class="right-section">
+              <h1>Positions</h1>
+              <h2>Using basic knowledge about css positions designing a simple web page</h2>
+              <div class="sec-button">
+                <a href="assignments/CSS/Case2/Assignment2.html" target="_blank"><button>View More</button></a>
+              </div>
+            </div>
+          </section>
         </section>
       </section>
     </section>
@@ -250,5 +282,29 @@
       <a href="mailto:theekshanaroxx0525@gmail.com" >theekshanaroxx0525@gmail.com</a>
     </div>
   </footer>
+
+
+
+
+  <script>
+
+    //screen changer
+    var proj_btn = document.getElementById("proj_btn");
+    var assign_btn = document.getElementById("assign_btn");
+    var assignments = document.getElementById("assignments");
+    var projects = document.getElementById("projects");
+
+    proj_btn.addEventListener('click',()=>{
+      projects.style.display = 'block';
+      assignments.style.display = 'none';
+    });
+
+    assign_btn.addEventListener('click',()=>{
+      projects.style.display = 'none';
+      assignments.style.display = 'block';
+    });
+
+  </script>
+
 </body>
 </html>
