@@ -161,9 +161,91 @@ video{
 .assignments-main,.projects-main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.block{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 50vh;
+    width: 60vw;
+    border: 0.5vh solid black;
+    border-radius: 3vh;
+    box-shadow: 0.5vh 0.5vh 1vh black;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.right-section , .left-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+
+.left-section{
+   
+    border-right: 0.5vh solid #CBCBCB;
+    box-shadow: 0.2vh 0 2vh;
+    justify-content: space-around;
+    border-radius: 3vh 0 0 3vh;
+}
+
+.img-container{
+    height: 70%;
+    width: 90%;
+    position: relative;
+    background-color: aqua;
+    overflow: hidden;
+    filter: drop-shadow(2px 4px 6px black);
+    background: url("../images/projects/cocos.png");
+    background-size: contain;
+}
+
+.left-section>h1{
+    font-size: 2vw;
+    margin-top: 0;
+}
+
+.right-section>h1{
+    font-size: 3vw;
+    margin: 0;
+    font-family: sans-serif;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    filter: drop-shadow(2px 4px 1vh black);
+}
+
+.right-section>h2{
+    margin: 0;
+    text-align: center;
+    width: 70%;
+    font-size: 3vh;
+}
+
+.sec-button {
+    position: relative;
+    top: 13vh;
+}
+
+.sec-button>a{
+    display: block;
+}
+
+.sec-button>a>button{
+    height: 5vh;
+    width: 7vw;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 0.5vh solid black;
+    box-shadow: 0.1vh 0.1vh 1vh black;
+    background: transparent;
+}
+
 
 
 
