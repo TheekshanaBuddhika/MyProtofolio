@@ -110,7 +110,7 @@ video{
     justify-content: space-evenly;
 }
 
-.button-container>button{
+.button-container>a>button{
     
     height: 12vh;
     width: 19vw;
@@ -123,10 +123,16 @@ video{
     z-index: 2;
 }
 
-.button-container>button:hover{
+.button-container>a>button:hover{
     background: white;
-    border: 1vh solid #CBCBCB;
+    border: 1vh solid black;
     color: black;
+    box-shadow: 0 0 1.5vh white;
+    cursor: pointer;
+}
+
+.button-container>a{
+    z-index: 1;
 }
 
 .end-container{
@@ -269,6 +275,15 @@ video{
     box-shadow: 0.1vh 0.1vh 1vh black;
     background: transparent;
     font-family: sans-serif;
+}
+
+.sec-button>a>button:hover{
+    height: 7.5vh;
+    background: black;
+    width: 8vw;
+    border-radius: 3vh;
+    color: white;
+    border: 0.5vh solid white;
 }
 
 
