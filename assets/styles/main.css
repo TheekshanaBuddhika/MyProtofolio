@@ -100,8 +100,15 @@ h1,h2,h3,h4{
     overflow: hidden;
 }
 
-video{
-    width: 100%;
+#bg_video{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
 }
 
 /* intro-left */
@@ -306,13 +313,6 @@ video{
    z-index: 3;
 }
 
-.intro-img-container>img:nth-child(3){
-    position: absolute;
-    height:87vh;
-    bottom: 0vh;
-    right: 0;
- }
-
  .smallcircle{
     width: 8vw;
     border-radius: 50%;
@@ -365,7 +365,7 @@ video{
 
  .about>section:nth-child(2){
     background-color: white;
-    border-radius: 40vh 0 0 40vh;
+    border-radius: 0 0 0 40vh;
     height: 100%;
     display: flex;
  }
