@@ -51,8 +51,10 @@ a{
 }
 
 video{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
+    object-fit: cover;
 }
 
 .polygon-container{
