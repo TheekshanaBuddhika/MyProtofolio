@@ -97,7 +97,10 @@ h1,h2,h3,h4{
     background-color: black;
     border-radius: 0 0 40vh 0;
     justify-content: space-between;
+    overflow: hidden;
 }
+
+/* intro-left */
 
 .intro-left{
     align-items: center;
@@ -224,13 +227,14 @@ h1,h2,h3,h4{
 
 /* contact button */
 .cont-button>a>button{
-    width:10vw;
+    height: 3vw;
+    width:12vw;
     background-color: transparent;
     border: 0.5vh solid white;
     color: white;
-    font-family: sans-serif;
     font-weight: bold;
-    padding: 0.8vh;
+    font-size: 1.1em;
+    padding: 1vh;
     margin-top: 6vh;
     letter-spacing: 0.5vh;
 }
@@ -241,6 +245,8 @@ h1,h2,h3,h4{
     color: black;
     box-shadow: 0 0 1vh white;
 }
+
+/* socail link container */
 
 .social-container{
     display: flex;
@@ -258,7 +264,7 @@ h1,h2,h3,h4{
 }
 
 .social-container>a>img:hover{
-    filter: drop-shadow(0 0 1vh white);
+    filter: drop-shadow(0 0 0.5vh white);
     height: 3vw;
 }
 
@@ -278,14 +284,16 @@ h1,h2,h3,h4{
     content: url("../images/logos/instagram\ \(1\).png");
 }
 
-.inner_intro>aside:nth-child(3)>div:first-child{
+/* intro-right */
+
+.intro-img-container{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-
-.inner_intro>aside:nth-child(3)>img:nth-child(2){
+/* background image */
+.intro-right>img:nth-child(2){
    position: absolute;
    height: 85vh;
    bottom: 0;
@@ -294,7 +302,7 @@ h1,h2,h3,h4{
    z-index: 3;
 }
 
-.inner_intro>aside:nth-child(3)>div:first-child>img:nth-child(3){
+.intro-img-container>img:nth-child(3){
     position: absolute;
     height:87vh;
     bottom: 0vh;
