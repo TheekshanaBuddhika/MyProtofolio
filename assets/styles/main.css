@@ -272,12 +272,14 @@ h1,h2,h3,h4{
 
 .social-container>a>img{
     height: 2.5vw;
+    transition-duration: 0.5s;
  
 }
 
 .social-container>a>img:hover{
     filter: drop-shadow(0 0 0.5vh white);
     height: 3vw;
+    transition-duration: 0.5s;
 }
 
 .social-container>a:first-child>img:hover{
