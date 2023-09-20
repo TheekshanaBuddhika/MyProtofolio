@@ -3,7 +3,7 @@
                
 .sidebar{
     position: fixed;
-    height: 4vw;
+    height: 15vw;
     background-color: black;
     left: 0;
     right: 0;
@@ -51,7 +51,7 @@
 .link-list>li>a{
     color: white;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2.5em;
     height: 100%;
     width: 100%;
     display: flex;
@@ -76,9 +76,9 @@
 .inner_intro{
     display: flex;
     background-color: black;
-    border-radius: 0 0 40vh 0;
-    justify-content: space-between;
-    overflow: hidden;
+    border-radius: 0 0 10vh 0;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 #bg_video{
@@ -97,22 +97,22 @@
 .intro-left{
     align-items: center;
     z-index: 3;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 9vh;
+    width: 100%;
 }
 
 .intro-left,.intro-right{
     position: relative;
     display: flex;
+    height: 61vh;
     flex-direction: column;
-    width: 50vw;
-    height: 90vh;
-    margin-top: 10vh;
 }
 
 /* polygon containers */   
 
 .intro-poly-container{
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 50vw;
     height: 22vh;
@@ -170,7 +170,7 @@
 
 .moto-container{
     width: 30vw;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border-left: 1vh solid white;
@@ -187,10 +187,12 @@
 }
 
 .intro-left>h1:nth-child(3){
-    font-size:4em;
+    font-size: 7.5em;
     color: white;
     margin: 0;
     filter: drop-shadow(0 0 0.3vh white);
+    text-align: center;
+    
 }
 
 .intro-left>h3:nth-child(2){
@@ -200,34 +202,34 @@
     /* job container */
 
 .job-container{
-    height: 12vh;
-    width: 30vw;
+    height: 6vh;
+    width: 67vw;
     background-color: white;
     display: flex;
     justify-content: center;
-    border-radius:0 4vh 4vh 8vh;
+    border-radius: 0 4vh 4vh 8vh;
     margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     align-items: center;
 }
 
 
 .job-container>h1{
-    font-size: 2.5em;
+    font-size: 5em;
 }
 
 /* contact button */
 .cont-button>a>button{
-    height: 3vw;
-    width:12vw;
+    height: 5vh;
+    width: 33vw;
     background-color: transparent;
     border: 0.5vh solid white;
     color: white;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 3em;
     padding: 1vh;
-    margin-top: 6vh;
     letter-spacing: 0.5vh;
+    margin-top: 0;
 }
 
 .cont-button>a>button:hover{
@@ -242,15 +244,16 @@
 .social-container{
     display: flex;
     justify-content: space-evenly;
-    width: 20vw;
-    align-self: flex-end;
-    margin-right: -10vw;
+    width: 44vw;
     margin-bottom: 2vh;
+    margin-top: 2vh;
     height: 3vw;
+    align-self: center;
+    margin-right:0;
 }
 
 .social-container>a>img{
-    height: 2.5vw;
+    height: 3.5vw;
     transition-duration: 0.5s;
  
 }
@@ -279,23 +282,33 @@
 
 /* intro-right */
 
+.intro-right{
+    margin-top: 28vw;
+}
+
 .intro-img-container{
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-around;
 }
 
 /* background image */
 .intro-right>img:nth-child(2){
-   position: absolute;
-   height: 85vh;
-   bottom: 0;
-   right: 15vw;
-   filter: drop-shadow(0 0 1vh black);
-   z-index: 3;
+    position: absolute;
+    height: 59vh;
+    bottom: 1vh;
+    filter: drop-shadow(0 0 1vh black);
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 0 0 20vw 20vw;
 }
 
  .smallcircle{
+    display: none;
     width: 8vw;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -308,7 +321,7 @@
  }
 
  .bigcircle{
-    width: 25vw;
+    width: 63vw;
     border-radius: 50%;
     aspect-ratio: 1/1;
     border: 4vh solid white;
@@ -322,8 +335,8 @@
     position: fixed;
     right: 0;
     top: 25vh;
-    height: 3vh;
-    width: 4vw;
+    height: 2vh;
+    width: 8vw;
     background-color: #CBCBCB;
     border-radius: 60px 0 0 60px;
     border: 3px solid rgb(115, 115, 115);
