@@ -1001,7 +1001,7 @@ h1,h2,h3,h4{
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 
 .proj>section:nth-child(2)>section:nth-child(2)>div:first-child{
