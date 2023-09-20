@@ -92,6 +92,10 @@
         bottom: 0;
 }
 
+.Mark{
+    order: 1;
+}
+
 /* intro-left */
 
 .intro-left{
@@ -197,6 +201,7 @@
 
 .intro-left>h3:nth-child(2){
     font-size:1em;
+    display: none;
 }
 
     /* job container */
@@ -283,7 +288,7 @@
 /* intro-right */
 
 .intro-right{
-    margin-top: 28vw;
+    margin-top: 25vw;
 }
 
 .intro-img-container{
