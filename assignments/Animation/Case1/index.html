@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="browser_default_reset.css">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            position: relative;
+            height:100vh;
+            left: 0;
+            right: 0;
+            background-color: aliceblue;
+        }
+
+        .main-body{
+            height: 80vh;
+            width: 50vw;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            margin: auto;
+        }
+        .m-obj{
+            height: 20vh;
+            width: 15vw;
+            border-radius: 2vw;
+            background-color: black;
+            animation-name: object;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            filter: drop-shadow(0 0 3vh black);
+        }
+
+        @keyframes object{
+            0%{
+                background-color: yellow;
+                top: 0;
+                left: 0;
+
+            }
+            25%{
+                background-color: purple;
+                transform: rotate(180deg);
+                top: 60vh;
+                left:0;
+            }
+            50%{
+                background-color: orange;
+                transform: rotate(360deg);
+                left:35vw;
+                top:60vh
+                
+            }
+            75%{
+                background-color: red;
+                transform: rotate(540deg);
+                left: 35vw;
+                top:0
+            }
+            100%{
+                background-color: green;
+                transform: rotate(720deg);
+                left: 0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="main-body">
+        <div class="m-obj"></div>
+    </section>
+</body>
+</html>
