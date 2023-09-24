@@ -1331,7 +1331,6 @@ h1,h2,h3,h4{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 2vh;
     color: rgba(0, 0, 0, 0.50);
     font-weight: bolder;
     font-family: sans-serif;
@@ -1345,7 +1344,7 @@ h1,h2,h3,h4{
 }
 
 .base>div>img{
-    height: 7vh;
+    height: 5vh;
 }
 
 .base>div>a{
