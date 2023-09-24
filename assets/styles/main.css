@@ -523,6 +523,7 @@ h1,h2,h3,h4{
  }
 
  .profile-container:hover .main-rec-container, .profile-container:hover .small-rec-container{
+    filter:drop-shadow(0 0 0.5vh white);
     border-radius: 50%;
     right:30vw;
     rotate: 45deg;
@@ -531,12 +532,18 @@ h1,h2,h3,h4{
     transition: 1s;
  }
 
+ .profile-container:hover .main-rec-container{
+    border: 2vh solid white;
+ }
+
  .profile-container:hover .small-rec-container>img{
         rotate: -90deg;
         transition: 1s;
  }
 
  .profile-container:hover #about_title{
+    filter:drop-shadow(0 0 0.5vh white);
+    color: white;
     margin-left: 13vw;
     transition: 1s;
  }
@@ -545,6 +552,10 @@ h1,h2,h3,h4{
     right: 3vw;
     transition: 1s;
     opacity: 1;
+}
+
+.profile-container:hover{
+    background:linear-gradient(to right,black 50%,white 50%);
 }
 
  /* polygon-container-right */
