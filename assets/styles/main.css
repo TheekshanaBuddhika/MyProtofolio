@@ -1272,20 +1272,20 @@ h1,h2,h3,h4{
     margin: 0;
     font-family: sans-serif;
     font-size: 3em;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     filter: drop-shadow(2px 4px 6px white);
 }
 
             /*Contact form */
 
-.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child{
+.contact-fset{
     border: none;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 35vw;
 }        
 
-.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child>button:nth-child(5){
+.contact-fset>button:nth-child(5){
     margin-top: 3vh;
     background: transparent;
     color: white;
@@ -1293,10 +1293,28 @@ h1,h2,h3,h4{
     padding: 1vh;
     width: 15vw;
     align-self: center;
+    font-weight: bold;
 }
 
-.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child>input,.cont>section:nth-child(4)>form:nth-child(2) fieldset:first-child>textarea{
+.contact-fset>button:nth-child(5):hover{
+    background: white;
+    color: black;
+    border: 0.5vh solid black;
+    box-shadow: 0 0 0.5vw white;
+}
+
+.contact-fset>input{
+    height: 2vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-fset>input,.contact-fset>textarea{
     margin-top: 2vh;
+    border-radius: 2vw;
+    box-shadow: 0 0 0.5vw white;
+    border: 0.3vh solid;
 }
 
 /* footer */
