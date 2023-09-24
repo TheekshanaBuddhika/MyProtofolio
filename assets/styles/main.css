@@ -1154,7 +1154,7 @@ h1,h2,h3,h4{
 }
 
 .gallery-left>img , .gallery-bottom>img{
-    height: 22vh;
+    width: 15vw;
     border-radius: 1vw;
     filter: grayscale(100%);
     box-shadow: 0 0 0.4vw;
@@ -1162,10 +1162,10 @@ h1,h2,h3,h4{
 }
 
 .gallery-left>img:hover , .gallery-bottom>img:hover{
-    height: 24vh;
+    width: 17vw;
     border-radius: 2vw;
     filter: grayscale(0%);
-    box-shadow: 0 0 0.5vw;
+    box-shadow: 0 0 2vw;
     transition: 1s;
 }
 
