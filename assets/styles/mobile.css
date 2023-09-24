@@ -362,27 +362,7 @@ h1,h2,h3,h4{
     right: 0;
     top: 25vh;
     height: 2vh;
-    width: 8vw;
-    background-color: #CBCBCB;
-    border-radius: 60px 0 0 60px;
-    border: 3px solid rgb(115, 115, 115);
-    border-right: none;
-    z-index: 3;
-}
-
-.theme-button{
-   border-radius: 50%;
-   height: 100%;
-   aspect-ratio: 1/1;;
-   background-color: black;
-}
- /* theme-changer */
-.theme-container{
-    position: fixed;
-    right: 0;
-    top: 25vh;
-    height: 3vh;
-    width: 4vw;
+    width: 7vw;
     background-color: #CBCBCB;
     border-radius: 60px 0 0 60px;
     border: 3px solid rgb(115, 115, 115);
@@ -406,7 +386,7 @@ h1,h2,h3,h4{
 
  .inner-about{
     background-color: white;
-    border-radius: 0 0 0 40vh;
+    border-radius: 0 0 0 10vh;
     height: 100%;
     display: flex;
  }
@@ -434,28 +414,28 @@ h1,h2,h3,h4{
  
  .about-polygon-left{
     display: flex;
-    height: 22vh;
+    height: 13vh;
     justify-content: space-around;
-    width: 15vw;
+    width: 12vw;
     margin-top: 3vh;
     align-self: flex-start;
  }
 
  .about-polygon-left>img:first-child{
     align-self: center;
-    height: 11vh;
+    height: 2vh;
     filter: drop-shadow(1vh 1vh 0.5vh #CBCBCb);
  }
 
  .about-polygon-left>img:nth-child(2){
     align-self: flex-start;
-    height: 15vh;
+    height: 4.5vh;
     filter: drop-shadow(1vh 1vh 0.5vh #CBCBCb);
  }
 
  .about-polygon-left>img:nth-child(3){
     align-self: flex-end;
-    height: 7vh;
+    height: 4vh;
     filter: drop-shadow(1vh 1vh 0.5vh #CBCBCb);
  }
 
@@ -465,7 +445,7 @@ h1,h2,h3,h4{
     position: relative;
     display: flex;
     width: 70vw;
-    height: 70vh;
+    height: 81vh;
     border: 1vh solid;
     border-radius: 3vw;
     box-shadow: 0 0 3vw;
@@ -474,7 +454,7 @@ h1,h2,h3,h4{
  }
 
  .profile-container>span{
-    font-size: 3em;
+    font-size: 5em;
     font-weight: bold;
     filter: drop-shadow(0 0 0.5vh black);
     margin-top: 1vw;
@@ -483,8 +463,8 @@ h1,h2,h3,h4{
  }
 
  .main-rec-container{
-    height: 55vh;
-    width: 55vh;
+    height: 35vh;
+    width: 35vh;
     border: 3vh solid;
     background-color: #CBCBCB;
     transform: rotate(45deg);
@@ -499,8 +479,8 @@ h1,h2,h3,h4{
  }
 
  .small-rec-container{
-    height: 55vh;
-    width: 55vh;
+    height: 35vh;
+    width: 35vh;
     overflow: hidden;
     box-shadow: 0 0 1vw;
     transform: rotate(-45deg);
@@ -516,9 +496,9 @@ h1,h2,h3,h4{
  }
 
  .about-info-contianer{
-    height: 55vh;
+    height: 36vh;
     display: flex;
-    width: 55vh;
+    width: 38vh;
     background-color: #CBCBCB;
     border: 0.5vh solid;
     flex-direction: column;
@@ -526,20 +506,22 @@ h1,h2,h3,h4{
     box-shadow: 0 0 0.5vw;
     position: absolute;
     top: 0;
-    bottom: 0;
-    right: -30vw;
+    bottom: -200vw;
+    right: 0;
     margin: auto;
     align-items: center;
+    left: 0;
     transition: 1s;
  }
 
  .about-info-contianer>p{
-    font-size: 1.2em;
+    font-size: 3em;
     font-weight: bold;
     font-family: cursive;
-    width: 50vh;
+    width: 35vh;
     margin-bottom: 0;
     margin-top: 3vw;
+}
  }
 
  .about-info-contianer>a{
@@ -552,8 +534,9 @@ h1,h2,h3,h4{
     background: white;
     padding: 0.5vh;
     font-weight: bold;
-    width: 10vw;
-    height: 5vh;
+    width: 24vw;
+    height: 4vh;
+    font-size: 2.5em;
  }
 
  .about-info-contianer>a>button:hover{
@@ -564,13 +547,15 @@ h1,h2,h3,h4{
  }
 
  .profile-container:hover .main-rec-container, .profile-container:hover .small-rec-container{
-    filter:drop-shadow(0 0 0.5vh white);
+    filter: drop-shadow(0 0 0.5vh white);
     border-radius: 50%;
-    right:30vw;
+    top: -59vw;
     rotate: 45deg;
-    height: 45vh;
-    width: 45vh;
+    height: 30vh;
+    width: 30vh;
+    left: 0;
     transition: 1s;
+    right: 0;
  }
 
  .profile-container:hover .main-rec-container{
@@ -583,20 +568,20 @@ h1,h2,h3,h4{
  }
 
  .profile-container:hover #about_title{
-    filter:drop-shadow(0 0 0.5vh white);
+    filter: drop-shadow(0 0 0.5vh white);
     color: white;
-    margin-left: 13vw;
+    margin-left: 24vw;
     transition: 1s;
  }
 
 .profile-container:hover .about-info-contianer{
-    right: 3vw;
+    bottom: -63vw;
     transition: 1s;
     opacity: 1;
 }
 
 .profile-container:hover{
-    background:linear-gradient(to right,black 50%,white 50%);
+    background: linear-gradient(to bottom,black 50%,white 50%);
 }
 
  /* polygon-container-right */
@@ -613,19 +598,19 @@ h1,h2,h3,h4{
 
  .about-polygon-right>img:first-child{
     align-self: flex-start;
-    height: 7vh;
+    height: 3vh;
     filter: drop-shadow(1vh 1vh 0.5vh #CBCBCb);
  }
 
  .about-polygon-right>img:nth-child(2){
     filter: drop-shadow(1vh 1vh 0.5vh #CBCBCb);
-    height: 8vh;
+    height: 4vh;
     align-self: center;
  }
 
  .about-polygon-right>img:nth-child(3){
     align-self: flex-end;
-    height: 10vh;
+    height: 4vh;
     filter: drop-shadow(1vh 1vh 0.5vh #CBCBCb);
  }
 
