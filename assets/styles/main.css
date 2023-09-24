@@ -1085,7 +1085,7 @@ h1,h2,h3,h4{
     background-color: black;
 }
 
-.memo>section:first-child{
+.inner_memo{
     background-color: white;
     height: 100vh;
     position: relative;
@@ -1093,24 +1093,25 @@ h1,h2,h3,h4{
     display: flex;
 }
 
-.memo>section:first-child>div:first-child{
+.memo-left{
     display: flex;
     margin-top: 10vh;
     align-items: flex-end;
 }
 
-.memo>section:first-child>div:first-child>img{
+.memo-left>img{
     height: 100%;
     filter: grayscale(100%);
+    transition: 1s;
 }
 
-.memo>section:first-child>div:first-child>img:hover{
+.memo-left>img:hover{
     filter: grayscale(0%);
     transition-duration: 1s;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(0 0 0.5vw black);
 }
 
-.memo>section:first-child>section:nth-child(2){
+.memo-right{
     margin-top: 10vh;
     position: relative;
     display: flex;
@@ -1119,7 +1120,7 @@ h1,h2,h3,h4{
     width: 100%;
 }
 
-.memo>section:first-child>section:nth-child(2)>div:first-child{
+.memo-title{
     background: linear-gradient(to top, #CBCBCB 50%, transparent 50%);
     display: flex;
     align-items: center;
@@ -1128,24 +1129,56 @@ h1,h2,h3,h4{
     justify-content: center;
 }
 
-.memo>section:first-child>section:nth-child(2)>div:first-child>h3{
+.memo-title>h3{
     margin: 0;
     font-size: 2.5em;
     font-family: sans-serif;
     filter: drop-shadow(2px 4px 6px black);
 }
 
-.memo>section:first-child>section:nth-child(2)>div:nth-child(2){
-    margin-top: 6vh;
+.memo-mid-img-container{
+    height: 50vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.gallery-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin-right: 9vh;
+}
+
+.gallery-left>img , .gallery-bottom>img{
+    height: 22vh;
+    border-radius: 1vw;
+    filter: grayscale(100%);
+    box-shadow: 0 0 0.4vw;
+    transition: 1s;
+}
+
+.gallery-left>img:hover , .gallery-bottom>img:hover{
+    height: 24vh;
+    border-radius: 2vw;
+    filter: grayscale(0%);
+    box-shadow: 0 0 0.5vw;
+    transition: 1s;
+}
+
+.memo-img-container{
     filter: drop-shadow(2px 4px 6px black);
 }
 
-.memo>section:first-child>section:nth-child(2)>div:nth-child(2)>img{
+.memo-img-container>img{
     border-radius: 5vh;
     height: 50vh;
 }
 
-.memo>section:first-child>section:nth-child(2)>div:nth-child(3){
+.gallery-bottom{
     margin-top: 3vh;
     width: 100%;
     display: flex;
@@ -1153,11 +1186,6 @@ h1,h2,h3,h4{
     align-items: center;
 }
 
-.memo>section:first-child>section:nth-child(2)>div:nth-child(3)>img{
-    height: 22vh;
-    border-radius: 5vh;
-    filter: drop-shadow(2px 4px 6px black);
-}
 
 
 /* Contacts */
