@@ -490,6 +490,7 @@ h1,h2,h3,h4{
     margin: auto;
     align-items: center;
     opacity: 0;
+    transition: 1s;
  }
 
  .about-info-contianer>p{
