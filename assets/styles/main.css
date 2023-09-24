@@ -1066,6 +1066,14 @@ h1,h2,h3,h4{
     border: 0.5vh solid white;
     padding: 1vh;
     font-size: 2vh;
+    font-weight: bold;
+}
+
+.proj>section:nth-child(2)>section:nth-child(3)>a>button:hover{
+    background-color: white;
+    color: black;
+    border: 0.5vh solid black;
+    box-shadow: 0 0 0.5vw white;
 }
 
 .proj>section:nth-child(2)>img:nth-child(4){
