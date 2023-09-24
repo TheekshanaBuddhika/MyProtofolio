@@ -388,6 +388,7 @@ h1,h2,h3,h4{
     width: 70vw;
     align-items: center;
     justify-content: center;
+    transform: scale(1);
  }
 
  /* polygon-container-left */
@@ -430,6 +431,7 @@ h1,h2,h3,h4{
     border-radius: 3vw;
     box-shadow: 0 0 3vw;
     flex-direction: column;
+    overflow: hidden;
  }
 
  .profile-container>span{
@@ -448,7 +450,7 @@ h1,h2,h3,h4{
     background-color: #CBCBCB;
     transform: rotate(45deg);
     box-shadow: 0 0 2vw;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -489,7 +491,7 @@ h1,h2,h3,h4{
     right: -28vw;
     margin: auto;
     align-items: center;
-    opacity: 0;
+    transition: 1s;
  }
 
  .about-info-contianer>p{
