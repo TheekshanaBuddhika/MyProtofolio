@@ -438,6 +438,7 @@ h1,h2,h3,h4{
     filter: drop-shadow(0 0 0.5vh black);
     margin-top: 1vw;
     margin-left: 3vw;
+    transition: 1s;
  }
 
  .main-rec-container{
@@ -453,6 +454,7 @@ h1,h2,h3,h4{
     right: 0;
     bottom: 0;
     margin: auto;
+    transition: 1s;
  }
 
  .small-rec-container{
@@ -461,10 +463,15 @@ h1,h2,h3,h4{
     overflow: hidden;
     box-shadow: 0 0 1vw;
     transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
  }
 
  .small-rec-container>img{
     width: 100%;
+    transition: 1s;
  }
 
  .about-info-contianer{
@@ -507,6 +514,38 @@ h1,h2,h3,h4{
     width: 10vw;
     height: 5vh;
  }
+
+ .about-info-contianer>a>button:hover{
+    border: 0.5vh solid white;
+    background: black;
+    color: white;
+    box-shadow: 0 0 0.5vh black;
+ }
+
+ .profile-container:hover .main-rec-container, .profile-container:hover .small-rec-container{
+    border-radius: 50%;
+    right:30vw;
+    rotate: 45deg;
+    height: 45vh;
+    width: 45vh;
+    transition: 1s;
+ }
+
+ .profile-container:hover .small-rec-container>img{
+        rotate: -90deg;
+        transition: 1s;
+ }
+
+ .profile-container:hover #about_title{
+    margin-left: 13vw;
+    transition: 1s;
+ }
+
+.profile-container:hover .about-info-contianer{
+    right: 3vw;
+    transition: 1s;
+    opacity: 1;
+}
 
  /* polygon-container-right */
 
