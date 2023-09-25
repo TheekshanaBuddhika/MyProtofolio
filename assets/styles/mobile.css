@@ -621,14 +621,14 @@ h1,h2,h3,h4{
     border-radius: 0 10vh 10vh 0;
  }
 
- .expert>section:nth-child(2){
+ .inner-expert{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
  }
 
- .expert>section:nth-child(2)>section:first-child{
+ .expert-top{
     margin-top: 10vh;
     display: flex;
     align-items: center;
@@ -636,119 +636,113 @@ h1,h2,h3,h4{
     justify-content: center;
  }
 
- .expert>section:nth-child(2)>section:first-child>div:first-child{
+ .expert-title{
     display: flex;
     background: linear-gradient(to top,#CBCBCB 50%, transparent 50%);
-    width: 16vw;
+    width: 45vw;
     justify-content: center;
-    height: 6vh;
+    height: 4vh;
     position: relative;
  }
 
 
- .expert>section:nth-child(2)>section:first-child>div:first-child>h3{
+ .expert-title>h3{
     margin-top: 0;
     margin-bottom: 0;
     color: white;
-    font-size: 2.5em;
+    font-size: 5em;
     font-family: sans-serif;
     filter: drop-shadow(2px 4px 6px black);
  }
 
- .expert>section:nth-child(2)>section:first-child>div:nth-child(2){
+ .expert-polygon{
     display: flex;
     width: 17vw;
-    height: 19vh;
+    height: 11vh;
     justify-content: space-around;
     position: absolute;
-    right: 10vw;
+    right: 4vw;
  }
 
- .expert>section:nth-child(2)>section:first-child>div:nth-child(2)>img:first-child{
-    height: 11vh;
+ .expert-polygon>img:first-child{
+    height: 5vh;
     align-self: flex-start;
     filter: drop-shadow(2px 4px 6px white);
  }
 
- .expert>section:nth-child(2)>section:first-child>div:nth-child(2)>img:nth-child(2){
+ .expert-polygon>img:nth-child(2){
     align-self: center;
-    height: 10vh;
+    height: 4vh;
     filter: drop-shadow(2px 4px 6px white);
  }
 
- .expert>section:nth-child(2)>section:first-child>div:nth-child(2)>img:nth-child(3){
+ .expert-polygon>img:nth-child(3){
     align-self: flex-end;
     filter: drop-shadow(2px 4px 6px white);
-    height: 8vh;
+    height: 3vh;
  }
 
- .expert>section:nth-child(2)>section:nth-child(2){
-    width: 83vw;
-    margin-top: 8vh;
- }
-
- .expert>section:nth-child(2)>section:nth-child(3){
-    width: 55vw;
-    margin-top: 5vh;
- }
-
- .expert>section:nth-child(2)>section:nth-child(2),.expert>section:nth-child(2)>section:nth-child(3){
+ .expert-mid{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 31vh;
+    height: 82vh;
     z-index: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 83vw;
+    margin-top: 2vh;
  }
 
- .expert>section:nth-child(2)>section:nth-child(2)>div,.expert>section:nth-child(2)>section:nth-child(3)>div{
+ .expert-mid>div{
     display: flex;
-    height: 100%;
+    height: 30vw;
     flex-direction: column;
     background-color: white;
     align-items: center;
     justify-content: center;
-    width: 20vw;
+    width: 78vw;
     border-radius: 3vh;
     filter: drop-shadow(2px 4px 6px white);
     padding-left: 1vh;
     padding-right: 1vh;
  }
 
- .expert>section:nth-child(2)>section:nth-child(2)>div:hover img,.expert>section:nth-child(2)>section:nth-child(3)>div:hover img{
+ .expert-mid>div:hover img{
     height: 11vh;
     filter: drop-shadow(2px 4px 6px rgb(98, 203, 255));
  }
 
- .expert>section:nth-child(2)>section:nth-child(2)>div>img,.expert>section:nth-child(2)>section:nth-child(3)>div>img{
+ .expert-mid>div>img{
     height: 10vh;
     filter: grayscale(100%);
  }
 
- .expert>section:nth-child(2)>section:nth-child(2)>div>h4,.expert>section:nth-child(2)>section:nth-child(3)>div>h4{
+ .expert-mid>div>h4{
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 2vh;
+    font-size: 3em;
     font-family: sans-serif;
     font-weight: bold;
  }
 
- .expert>section:nth-child(2)>section:nth-child(2)>div>p,.expert>section:nth-child(2)>section:nth-child(3)>div>p{
-    font-size: 2vh;
-    font-family: sans-serif;
+ .expert-mid>div>p{
+    font-size: 2.5em;
+    font-family: monospace;
+    font-weight: bold;
  }
 
- .expert>section:nth-child(2)>div:nth-child(4){
+ .expert-bottom{
     position: absolute;
     left: -3vw;
     bottom: 7vh;
+    display: none;
  }
 
- .expert>section:nth-child(2)>div:nth-child(4)>img{
+ .expert-bottom>img{
     height: 33vw;
     border-radius: 0 0 40vh 0;
     filter: drop-shadow(0.3vh 0.5vh 0.3vh white);
  }
-
 
 /* My Experience */
 
