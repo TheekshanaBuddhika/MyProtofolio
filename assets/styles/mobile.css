@@ -937,7 +937,7 @@ h1,h2,h3,h4{
 /* Tools */
 .tech{
     background-color: black;
-    border-radius: 0 40vh 40vh 0;
+    border-radius: 0 10vh 10vh 0;
 }
 
 .tech>section:first-child{
@@ -961,13 +961,13 @@ h1,h2,h3,h4{
     align-items: center;
     justify-content: center;
     background: linear-gradient(to top, #CBCBCB 50%, transparent 50%);
-    height: 6vh;
-    width: 24vw;
+    height: 5vh;
+    width: 63vw;
 }
 
 .tech>section:first-child>section:first-child>div:first-child>h3{
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5em;
     color: white;
     font-family: sans-serif;
     filter: drop-shadow(2px 4px 6px black);
@@ -982,12 +982,16 @@ h1,h2,h3,h4{
     margin-top: 15vh;
 }
 
+.tech>section:first-child>section:nth-child(2)>div:first-child,.tech>section:first-child>section:nth-child(2)>div:nth-child(3){
+    display: none;
+}
+
 .tech>section:first-child>section:nth-child(2)>div:first-child>img,.tech>section:first-child>section:nth-child(2)>div:nth-child(3)>img{
     height: 30vh;
 }
 
 .tech>section:first-child>section:nth-child(2)>div:nth-child(2)>img{
-    height: 50vh;
+    height: 45vh;
 }
 
 .tech>section:first-child>section:nth-child(3){
@@ -1001,7 +1005,7 @@ h1,h2,h3,h4{
 .tech>section:first-child>section:nth-child(3)>div{
     display: flex;
     justify-content: space-around;
-    width: 23vw;
+    width: 35vw;
 }
 
 .tech>section:first-child>section:nth-child(3)>div>img{
@@ -1009,17 +1013,17 @@ h1,h2,h3,h4{
 }
 
 .tech>section:first-child>section:nth-child(3)>div:first-child>img:first-child,.tech>section:first-child>section:nth-child(3)>div:nth-child(2)>img:nth-child(3){
-    height: 10vh;
+    height: 6vh;
     align-self: flex-start;
 }
 
 .tech>section:first-child>section:nth-child(3)>div:first-child>img:nth-child(2),.tech>section:first-child>section:nth-child(3)>div:nth-child(2)>img:nth-child(2){
-    height: 12vh;
+    height: 7vh;
     align-self: center;
 }
 
 .tech>section:first-child>section:nth-child(3)>div:first-child>img:nth-child(3),.tech>section:first-child>section:nth-child(3)>div:nth-child(2)>img:nth-child(1){
-    height: 14vh;
+    height: 8vh;
     align-self: flex-end;
 }
 
