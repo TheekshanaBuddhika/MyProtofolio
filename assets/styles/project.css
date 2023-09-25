@@ -270,7 +270,7 @@ video{
 
 .sec-button>a>button{
     height: 5vh;
-    width: 7vw;
+    width: 9vw;
     font-size: 1vw;
     font-weight: bold;
     border: 0.5vh solid black;
@@ -282,7 +282,7 @@ video{
 .sec-button>a>button:hover{
     height: 7.5vh;
     background: black;
-    width: 8vw;
+    width: 10vw;
     border-radius: 3vh;
     color: white;
     border: 0.5vh solid white;
