@@ -8,7 +8,7 @@ a{
 /* all paragraphs */
 p{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2.5em;
 }
 
 body{
@@ -759,7 +759,7 @@ h1,h2,h3,h4{
 .experiences>section:first-child{
     height: 100vh;
     background-color: white;
-    border-radius: 40vh 0 0 40vh;
+    border-radius: 10vh 0 0 10vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -773,29 +773,30 @@ h1,h2,h3,h4{
 
 .experiences>section:first-child>section:first-child>div:first-child{
     position: absolute;
-    left: 10vw;
-    height: 15vh;
-    width: 20vw;
+    left: 4vw;
+    height: 11vh;
+    width: 24vw;
     display: flex;
     justify-content: space-evenly;
 }
 
 .experiences>section:first-child>section:first-child>div:first-child>img{
+    height: 5vh;
     filter: drop-shadow(2px 4px 6px black);
 }
 
 .experiences>section:first-child>section:first-child>div:first-child>img:first-child{
-    height: 10vh;
+    height: 3vh;
     align-self: center;
 }
 
 .experiences>section:first-child>section:first-child>div:first-child>img:first-child{
-    height: 11vh;
+    height: 5vh;
     align-self: flex-start;
 }
 
 .experiences>section:first-child>section:first-child>div:first-child>img:first-child{
-    height: 8vh;
+    height: 5vh;
     align-self: flex-end;
 }
 
@@ -804,12 +805,12 @@ h1,h2,h3,h4{
     align-items: center;
     justify-content: center;
     background: linear-gradient(to top, #CBCBCB 50%, transparent 50%);
-    width: 19vw;
-    height: 7vh;
+    width: 41vw;
+    height: 5vh;
 }
 
 .experiences>section:first-child>section:first-child>div:nth-child(2)>h3{
-    font-size: 2.5em;
+    font-size: 5em;
     font-family: sans-serif;
     filter: drop-shadow(2px 4px 6px black);
     margin: 0;
@@ -817,7 +818,7 @@ h1,h2,h3,h4{
 
 .experiences>section:first-child>section{
     display: flex;
-    width: 90vw;
+    width: 100vw;
     justify-content: center;
     position: relative;
 }
@@ -829,6 +830,7 @@ h1,h2,h3,h4{
 .experiences>section:first-child>section>div>div>h4,.experiences>section:first-child>section>div>div>h4{
     font-weight: bold;
     font-family: sans-serif;
+    font-size: 3em;
 }
 
 .experiences>section:first-child>section:nth-child(2)>div:first-child>img:nth-child(2),.experiences>section:first-child>section:nth-child(3)>div:first-child>img:nth-child(2),.experiences>section:first-child>section:nth-child(4)>div:first-child>img:nth-child(2),.experiences>section:first-child>section:nth-child(5)>div:first-child>img:nth-child(2){
@@ -838,27 +840,27 @@ h1,h2,h3,h4{
 
 .experiences>section:first-child>section:nth-child(2)>div:first-child{
     margin-top: 11vh;
-    margin-left: 5vw;
+    margin-left: 0;
 }
 
 .experiences>section:first-child>section:nth-child(3)>div:first-child{
     margin-top: 2vh;
-    margin-left: 10vw;
+    margin-left: 0;
 }
 
 .experiences>section:first-child>section:nth-child(4)>div:first-child{
     margin-top: 2vh;
-    margin-left: 15vw;
+    margin-left: 0;
 }
 
 .experiences>section:first-child>section:nth-child(5)>div:first-child{
     margin-top: 2vh;
-    margin-left: 20vw;
+    margin-left: 0;
 }
 
 .experiences>section:first-child>section:nth-child(2)>div:first-child,.experiences>section:first-child>section:nth-child(3)>div:first-child,.experiences>section:first-child>section:nth-child(4)>div:first-child,.experiences>section:first-child>section:nth-child(5)>div:first-child{
     height: 15vh;
-    width: 25vw;
+    width: 71vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -877,19 +879,19 @@ h1,h2,h3,h4{
 }
 
 .experiences>section:first-child>section:nth-child(4)>div:nth-child(2)>img:first-child{
-    height: 7vh;
+    height: 3vh;
     filter: drop-shadow(2px 4px 6px black);
     align-self: flex-start;
 }
 
 .experiences>section:first-child>section:nth-child(4)>div:nth-child(2)>img:nth-child(2){
-    height: 9vh;
+    height: 5vh;
     filter: drop-shadow(2px 4px 6px black);
     align-self: center;
 }
 
 .experiences>section:first-child>section:nth-child(4)>div:nth-child(2)>img:nth-child(3){
-    height: 12vh;
+    height: 5vh;
     align-self: flex-end;
     filter: drop-shadow(2px 4px 6px black);
 }
@@ -904,21 +906,25 @@ h1,h2,h3,h4{
 }
 
 .experiences>section:first-child>section:nth-child(5)>div:nth-child(2)>img:first-child{
-    height: 10vh;
+    height: 3vh;
     align-self: flex-end;
     filter: drop-shadow(2px 4px 6px black);
 }
 
 .experiences>section:first-child>section:nth-child(5)>div:nth-child(2)>img:nth-child(2){
-    height: 10vh;
+    height: 5vh;
     align-self: center;
     filter: drop-shadow(2px 4px 6px black);
 }
 
 .experiences>section:first-child>section:nth-child(5)>div:nth-child(2)>img:nth-child(3){
-    height: 10vh;
+    height: 5vh;
     align-self: flex-start;
     filter: drop-shadow(2px 4px 6px black);
+}
+
+.experiences>section:first-child>div:nth-child(6){
+    display: none;
 }
 
 .experiences>section:first-child>div:nth-child(6)>img{
