@@ -1251,16 +1251,13 @@ h1,h2,h3,h4{
 }
 
 .cont>section:nth-child(3){
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 31.5vw;
-}
-
-.cont>section:nth-child(4){
-    width: 67vw;
-}
-
-.cont>section:nth-child(3),.cont>section:nth-child(4){
-    position: relative;
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -1268,22 +1265,37 @@ h1,h2,h3,h4{
     justify-content: center;
 }
 
+.cont>section:nth-child(4){
+    position: relative;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
 .cont>section:nth-child(3)>div:first-child{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 21vw;
+    width: 66vw;
 }
 
 .cont>section:nth-child(3)>div:first-child>h2{
     
     margin: 0;
-    font-size: 2em;
+    font-size: 7em;
     color: white;
     filter: drop-shadow(2px 4px 6px white);
     margin-bottom: 3vh;
     text-align: center;
 
+}
+
+.cont>section:nth-child(3)>div:nth-child(2){
+    opacity: 0.7;
 }
 
 .cont>section:nth-child(3)>div:nth-child(2)>div:first-child{
@@ -1317,9 +1329,9 @@ h1,h2,h3,h4{
     color: white;
     margin: 0;
     font-family: sans-serif;
-    font-size: 3em;
-    margin-bottom: 5vh;
-    filter: drop-shadow(2px 4px 6px white);
+    font-size: 5em;
+    margin-bottom: 2vh;
+    filter: drop-shadow(0 0 0.5vw black);
 }
 
             /*Contact form */
@@ -1328,7 +1340,7 @@ h1,h2,h3,h4{
     border: none;
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 68vw;
 }        
 
 .contact-fset>button:nth-child(5){
@@ -1337,9 +1349,10 @@ h1,h2,h3,h4{
     color: white;
     border: 0.5vh solid white;
     padding: 1vh;
-    width: 15vw;
+    width: 37vw;
     align-self: center;
     font-weight: bold;
+    font-size: 2.5em;
 }
 
 .contact-fset>button:nth-child(5):hover{
@@ -1361,6 +1374,10 @@ h1,h2,h3,h4{
     border-radius: 2vw;
     box-shadow: 0 0 0.5vw white;
     border: 0.3vh solid;
+}
+
+.contact-fset>textarea{
+    height: 32vw;
 }
 
 /* footer */
