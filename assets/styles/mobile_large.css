@@ -24,7 +24,7 @@
                    
      .sidebar{
         position: fixed;
-        height: 15vw;
+        height: 12.5vw;
         background-color: black;
         left: 0;
         right: 0;
@@ -123,7 +123,7 @@
         align-items: center;
         z-index: 3;
         justify-content: center;
-        margin-top: 9vh;
+        margin-top: 3vh;
         width: 100%;
     }
     
@@ -309,7 +309,7 @@
     /* intro-right */
     
     .intro-right{
-        margin-top: 25vw;
+        margin-top: 18vw;
     }
     
     .intro-img-container{
@@ -342,18 +342,18 @@
         align-self: end;
         margin-right: 10vw;
         z-index: 2;
-        filter: drop-shadow(0 0 1vh white);
+        filter: drop-shadow(0 0 2.6vh white);
         margin-top: 4vh;
      }
     
      .bigcircle{
-        width: 63vw;
+        width: 53vw;
         border-radius: 50%;
         aspect-ratio: 1/1;
         border: 4vh solid white;
         align-self: center;
         z-index: 2;
-        filter: drop-shadow(0 0 3vh white);
+        filter: drop-shadow(0 0 2.6vh white);
      }
     
      /* theme-changer */
@@ -463,8 +463,8 @@
      }
     
      .main-rec-container{
-        height: 35vh;
-        width: 35vh;
+        height: 40vh;
+        width: 40vh;
         border: 3vh solid;
         background-color: #CBCBCB;
         transform: rotate(45deg);
@@ -479,8 +479,8 @@
      }
     
      .small-rec-container{
-        height: 35vh;
-        width: 35vh;
+        height: 40vh;
+        width: 40vh;
         overflow: hidden;
         box-shadow: 0 0 1vw;
         transform: rotate(-45deg);
@@ -515,7 +515,7 @@
      }
     
      .about-info-contianer>p{
-        font-size: 3em;
+        font-size: 2.15em;
         font-weight: bold;
         font-family: cursive;
         width: 35vh;
@@ -548,10 +548,10 @@
      .profile-container:hover .main-rec-container, .profile-container:hover .small-rec-container{
         filter: drop-shadow(0 0 0.5vh white);
         border-radius: 50%;
-        top: -59vw;
+        top: -42vw;
         rotate: 45deg;
-        height: 30vh;
-        width: 30vh;
+        height: 27vh;
+        width: 27vh;
         left: 0;
         transition: 1s;
         right: 0;
@@ -574,7 +574,7 @@
      }
     
     .profile-container:hover .about-info-contianer{
-        bottom: -63vw;
+        bottom: -48vw;
         right: 0;
         transition: 1s;
         opacity: 1;
@@ -695,7 +695,7 @@
     
      .expert-mid>div{
         display: flex;
-        height: 30vw;
+        height: 23vw;
         flex-direction: column;
         background-color: white;
         align-items: center;
@@ -1387,7 +1387,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        padding-bottom: 2vh;
+        padding-bottom: 0.5vh;
         color: rgba(0, 0, 0, 0.50);
         font-weight: bolder;
         font-family: sans-serif;
