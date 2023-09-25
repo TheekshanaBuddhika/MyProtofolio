@@ -853,6 +853,11 @@ h1,h2,h3,h4{
     margin-left: 0;
 }
 
+.experiences>section:first-child>section:nth-child(4)>div:first-child>div:first-child{
+    width: 46vw;
+    text-align: center;
+}
+
 .experiences>section:first-child>section:nth-child(5)>div:first-child{
     margin-top: 2vh;
     margin-left: 0;
