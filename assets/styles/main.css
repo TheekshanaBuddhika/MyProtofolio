@@ -1345,3 +1345,54 @@ h1,h2,h3,h4{
     font-weight: bolder;
     font-family: sans-serif;
 }
+
+/* ------------------------------------------ Laptop Large------------------------------------------------------ */
+
+@media all and (min-width:1440px){
+    /* about-mid */
+
+
+ .about-info-contianer{
+    height: 55vh;
+    display: flex;
+    width: 66vh;
+    background-color: #CBCBCB;
+    border: 0.5vh solid;
+    flex-direction: column;
+    border-radius: 2vw;
+    box-shadow: 0 0 0.5vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30vw;
+    margin: auto;
+    align-items: center;
+    transition: 1s;
+ }
+
+ .about-info-contianer>p{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: cursive;
+    width: 62vh;
+    margin-bottom: 0;
+    margin-top: 1.5vw;
+ }
+
+ .profile-container:hover .main-rec-container, .profile-container:hover .small-rec-container{
+    filter: drop-shadow(0 0 0.5vh white);
+    border-radius: 50%;
+    right: 36vw;
+    rotate: 45deg;
+    height: 45vh;
+    width: 45vh;
+    transition: 1s;
+ }
+
+ .profile-container:hover #about_title{
+    filter: drop-shadow(0 0 0.5vh white);
+    color: white;
+    margin-left: 11vw;
+    transition: 1s;
+ }
+}
