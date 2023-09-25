@@ -576,6 +576,7 @@ h1,h2,h3,h4{
 
 .profile-container:hover .about-info-contianer{
     bottom: -63vw;
+    right: 0;
     transition: 1s;
     opacity: 1;
 }
@@ -618,7 +619,7 @@ h1,h2,h3,h4{
 
  .expert{
     background-color: black;
-    border-radius: 0 40vh 40vh 0;
+    border-radius: 0 10vh 10vh 0;
  }
 
  .expert>section:nth-child(2){
