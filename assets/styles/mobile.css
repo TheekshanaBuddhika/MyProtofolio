@@ -1038,7 +1038,7 @@ h1,h2,h3,h4{
     background-color: white;
     height: 100vh;
     position: relative;
-    border-radius: 40vh 0 0 0;
+    border-radius: 10vh 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1054,14 +1054,14 @@ h1,h2,h3,h4{
 .proj>section:nth-child(2)>section:first-child>div:first-child{
     display: flex;
     background: linear-gradient(to top, #CBCBCB 50%, transparent 50%);
-    width: 21vw;
+    width: 54vw;
     align-items: center;
     justify-content: center;
 }
 
 .proj>section:nth-child(2)>section:first-child>div:first-child>h3{
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5em;
     font-family: sans-serif;
     filter: drop-shadow(2px 4px 6px black);
 }
@@ -1079,7 +1079,7 @@ h1,h2,h3,h4{
 }
 
 .proj>section:nth-child(2)>section:nth-child(2)>div:first-child>img:first-child{
-    height: 55vh;
+    height: 32vh;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -1116,6 +1116,7 @@ h1,h2,h3,h4{
     margin: auto;
     bottom: 0;
     top: 0;
+    left: 0;
     opacity: 0.5;
     z-index: 1;
 }
