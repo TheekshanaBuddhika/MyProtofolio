@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="browser_default_reset.css">
+    <title>Document</title>
+
+    <style>
+        body{
+            position: relative;
+            height: 100vh;
+            right: 0;
+            left:0;
+            background-color: rgb(32, 57, 57);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .front-circle{
+            height: 500px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: rgb(32, 57, 57);
+            z-index: 1;
+        }
+        .back-circle{
+            position: absolute;
+            height: 500px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: rgb(253, 253, 102);
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            animation-name: swing;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes swing{
+            0%{
+                top:40px;
+                right: 40px;
+                box-shadow: none;
+                
+            }
+            25%{
+                top: 0;
+                right: 0;
+                box-shadow: 0 0 5vw white;
+            }
+            50%{
+                top: -40px;
+                right: -40px;
+                box-shadow: none;
+            }
+            75%{
+                box-shadow: 0 0 5vw white;
+            }
+            100%{
+                top:40px;
+                right: 40px;
+                box-shadow: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="back-circle"></div>
+    <div class="front-circle"></div>
+</body>
+</html>
