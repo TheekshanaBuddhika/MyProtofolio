@@ -37,33 +37,34 @@
             bottom: 0;
             margin: auto;
             animation-name: swing;
-            animation-duration: 3s;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
         }
 
         @keyframes swing{
             0%{
+                top:40px;
+                right: 40px;
+                box-shadow: none;
+                
+            }
+            25%{
                 top: 0;
                 right: 0;
                 box-shadow: 0 0 5vw white;
             }
-            25%{
-                top:40px;
-                right: 40px;
-                box-shadow: none;
-            }
             50%{
-                box-shadow: 0 0 5vw white;
-            }
-            75%{
                 top: -40px;
                 right: -40px;
                 box-shadow: none;
             }
-            100%{
-                top:0;
-                right: 0;
+            75%{
                 box-shadow: 0 0 5vw white;
+            }
+            100%{
+                top:40px;
+                right: 40px;
+                box-shadow: none;
             }
         }
     </style>
