@@ -48,10 +48,18 @@
     <script>
         let color = new Array("purple","green","red","yellow","blue");
         let element = document.getElementsByTagName("div");
-        
-        for (let key in color) {
-          element[key].style.backgroundColor = color[key];
+        let timer;
+
+        timer = setInterval(function(){
+        for (let i in color) {
+            element[i].style.backgroundColor = color[i];
         }
+        let last = color[color.length-1];
+        color.pop();
+        color.unshift(last);
+        },500);
+
+        
 
     </script>
 
