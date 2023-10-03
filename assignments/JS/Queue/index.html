@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="browser_default_reset.css">
+    <title>Document</title>
+
+    <style>
+        main{
+            position: relative;
+            height: 100vh;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            position: relative;
+            height: 10vh;
+            width: 15vw;
+            border-style: inset;
+            border: 0.5vh solid black;
+
+        }
+
+       div:nth-child(1){
+            bottom: 10vh;
+        }
+
+        div:nth-child(5){
+            top: 10vh;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+
+    <script>
+        let color = new Array("purple","green","red","yellow","blue");
+        let element = document.getElementsByTagName("div");
+        
+        for (let key in color) {
+          element[key].style.backgroundColor = color[key];
+        }
+
+    </script>
+
+</body>
+</html>
