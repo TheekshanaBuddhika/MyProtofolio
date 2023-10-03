@@ -54,8 +54,7 @@
         for (let i in color) {
             element[i].style.backgroundColor = color[i];
         }
-        let last = color[color.length-1];
-        color.pop();
+        let last = color.pop();;
         color.unshift(last);
         },500);
 
