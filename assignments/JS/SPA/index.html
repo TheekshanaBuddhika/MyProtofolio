@@ -593,25 +593,25 @@
                       <form>
                           <div class="mb-3">
                               <label class="form-label">ID</label>
-                              <input type="email" class="form-control" placeholder="">
+                              <input id="cus_id" type="email" class="form-control" placeholder="">
                           </div>
 
                           <div class="mb-3">
                               <label class="form-label">Customer Name</label>
-                              <input type="email" class="form-control" placeholder="">
+                              <input id="cus_nm" type="email" class="form-control" placeholder="">
                           </div>
 
                           <div class="mb-3">
                               <label class="form-label">Customer address</label>
-                              <input type="email" class="form-control" placeholder="">
+                              <input id="cus_add" type="email" class="form-control" placeholder="">
                           </div>
 
                           <div class="mb-3">
                               <label class="form-label">Customer TP</label>
-                              <input type="email" class="form-control" placeholder="">
+                              <input id="cus_tp" type="email" class="form-control" placeholder="">
                           </div>
 
-                          <button type="button" class="btn btn-primary">Add Customer</button>
+                          <button id="ad_cus_btn" type="button" class="btn btn-primary">Add Customer</button>
                       </form>
                   </div>
               </div>
@@ -803,6 +803,26 @@
         oddsec.style.display = 'none';
       });
 
+    //   ---------------------------------------- customer data retrieve ----------------------------------------
+
+      let ad_cus_btn = document.querySelector('#ad_cus_btn');
+      let cus_id = document.querySelector('#cus_id');
+      let cus_nm = document.querySelector('#cus_nm');
+      let cus_add = document.querySelector('#cus_add');
+      let cus_tp = document.querySelector('#cus_tp');
+      let customer;
+      let cus_info=new Array();
+      
+      ad_cus_btn.addEventListener("click",function(){
+            customer = { id:cus_id.value,name:cus_nm.value ,add:cus_add.value,tp:cus_tp.value};
+            cus_info.push(customer);
+            cus_id.value = " ";
+            cus_add.value = " ";
+            cus_tp.value = " ";
+            cus_nm.value = " ";
+            console.log(cus_info);
+
+      });
 
     </script>
 </body>
