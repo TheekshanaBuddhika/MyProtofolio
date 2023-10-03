@@ -76,76 +76,6 @@
                   </tr>
                   </thead>
                   <tbody id="body">
-                  <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td class="">
-                          <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal2">
-                              Update
-                          </button>
-                          <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                      </td>
-                  </tr>
-  
-  
-                  <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td class="">
-                          <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal2">
-                              Update
-                          </button>
-                          <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                      </td>
-                  </tr>
-  
-                  <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td class="">
-                          <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal2">
-                              Update
-                          </button>
-                          <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                      </td>
-                  </tr>
-  
-                  <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td class="">
-                          <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal2">
-                              Update
-                          </button>
-                          <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                      </td>
-                  </tr>
-  
-                  <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td class="">
-                          <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal2">
-                              Update
-                          </button>
-                          <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                      </td>
-                  </tr>
   
                   <tr>
                       <td>#</td>
@@ -812,6 +742,9 @@
       let cus_tp = document.querySelector('#cus_tp');
       let customer;
       let cus_info=new Array();
+
+      let Customertablebody = document.querySelector('#body');
+      let body = document.querySelector('#body');
       
       ad_cus_btn.addEventListener("click",function(){
             customer = { id:cus_id.value,name:cus_nm.value ,add:cus_add.value,tp:cus_tp.value};
@@ -820,9 +753,29 @@
             cus_add.value = " ";
             cus_tp.value = " ";
             cus_nm.value = " ";
+            getall(customer);
             console.log(cus_info);
 
       });
+
+      function getall(customer){
+        let row = document.createElement('tr');
+        let td_cusid = document.createElement('td');
+        let td_cusadd = document.createElement('td');
+        let td_cusnm = document.createElement('td');
+        let td_custp= document.createElement('td');
+        let td_action= document.createElement('td');
+        let action_update = document.createElement('button',"update");
+        let action_delete = document.createElement('delete',"delete");
+        td_cusid.textContent = customer.id;
+        td_cusadd.textContent = customer.add;
+        td_cusnm.textContent = customer.name;
+        td_custp.textContent = customer.tp;
+        td_action.append(action_update,action_delete);
+
+        row.append(td_cusid,td_cusnm,td_cusadd,td_custp,td_action);
+        body.append(row);
+      }
 
     </script>
 </body>
