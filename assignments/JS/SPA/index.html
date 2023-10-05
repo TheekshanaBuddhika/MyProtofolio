@@ -737,46 +737,69 @@
 
     //   ---------------------------------------- customer data retrieve ----------------------------------------
 
-      let ad_cus_btn = document.querySelector('#ad_cus_btn');
-      let cus_id = document.querySelector('#cus_id');
-      let cus_nm = document.querySelector('#cus_nm');
-      let cus_add = document.querySelector('#cus_add');
-      let cus_tp = document.querySelector('#cus_tp');
-      let customer;
-      let cus_info=new Array();
+    //   let ad_cus_btn = document.querySelector('#ad_cus_btn');
+    //   let cus_id = document.querySelector('#cus_id');
+    //   let cus_nm = document.querySelector('#cus_nm');
+    //   let cus_add = document.querySelector('#cus_add');
+    //   let cus_tp = document.querySelector('#cus_tp');
+    //   let customer;
+    //   let cus_info=new Array();
 
-      let Customertablebody = document.querySelector('#body');
-      let body = document.querySelector('#body');
+    //   let Customertablebody = document.querySelector('#body');
+    //   let body = document.querySelector('#body');
       
-      ad_cus_btn.addEventListener("click",function(){
-            customer = { id:cus_id.value,name:cus_nm.value ,add:cus_add.value,tp:cus_tp.value};
+    //   ad_cus_btn.addEventListener("click",function(){
+    //         customer = { id:cus_id.value,name:cus_nm.value ,add:cus_add.value,tp:cus_tp.value};
+    //         cus_info.push(customer);
+    //         cus_id.value = " ";
+    //         cus_add.value = " ";
+    //         cus_tp.value = " ";
+    //         cus_nm.value = " ";
+    //         getall(customer);
+    //         console.log(cus_info);
+
+    //   });
+
+    //   function getall(customer){
+    //     let row = document.createElement('tr');
+    //     let td_cusid = document.createElement('td');
+    //     let td_cusadd = document.createElement('td');
+    //     let td_cusnm = document.createElement('td');
+    //     let td_custp= document.createElement('td');
+    //     let td_action= document.createElement('td');
+    //     let action_update = document.createElement('button',"update");
+    //     let action_delete = document.createElement('delete',"delete");
+    //     td_cusid.textContent = customer.id;
+    //     td_cusadd.textContent = customer.add;
+    //     td_cusnm.textContent = customer.name;
+    //     td_custp.textContent = customer.tp;
+    //     td_action.append(action_update,action_delete);
+
+    //     row.append(td_cusid,td_cusnm,td_cusadd,td_custp,td_action);
+    //     body.append(row);
+    //   }
+
+    let customer;
+    let cus_info=new Array();
+
+    $('#ad_cus_btn').click(function(){
+            customer = {    id:$('#cus_id').val(),
+                            name:$('#cus_nm').val() ,
+                            add:$('#cus_add').val(),
+                            tp:$('#cus_tp').val()
+                        };
             cus_info.push(customer);
-            cus_id.value = " ";
-            cus_add.value = " ";
-            cus_tp.value = " ";
-            cus_nm.value = " ";
+            $('#cus_id').val("");
+            $('#cus_nm').val("") ;
+            $('#cus_add').val("");
+            $('#cus_tp').val("");
             getall(customer);
             console.log(cus_info);
-
-      });
-
-      function getall(customer){
-        let row = document.createElement('tr');
-        let td_cusid = document.createElement('td');
-        let td_cusadd = document.createElement('td');
-        let td_cusnm = document.createElement('td');
-        let td_custp= document.createElement('td');
-        let td_action= document.createElement('td');
-        let action_update = document.createElement('button',"update");
-        let action_delete = document.createElement('delete',"delete");
-        td_cusid.textContent = customer.id;
-        td_cusadd.textContent = customer.add;
-        td_cusnm.textContent = customer.name;
-        td_custp.textContent = customer.tp;
-        td_action.append(action_update,action_delete);
-
-        row.append(td_cusid,td_cusnm,td_cusadd,td_custp,td_action);
-        body.append(row);
+                                    });
+                                    
+    function getall(customer){
+       
+        $('#body').append(`<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.add}</td><td>${customer.tp}</td><td>Action</td></tr>`);
       }
 
     </script>
