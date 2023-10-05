@@ -41,6 +41,11 @@
 
   <main>
 
+    <!-- loader -->
+    <section class="loader">
+      <div></div>
+    </section>
+
    <!-- home -->  
     <section class="inner_intro">
       <dfn class="Mark" id="home"></dfn>
@@ -387,5 +392,13 @@
     </div>
   </footer>
 
+  <script src="assets/script/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script>
+    $(window).on('load',function (){
+    $(".loader").fadeOut(1000);
+    console.log("Window is fully loaded");
+});
+  </script>
+  
 </body>
 </html>     
