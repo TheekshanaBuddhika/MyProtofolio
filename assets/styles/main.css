@@ -105,6 +105,32 @@ h1,h2,h3,h4{
     z-index: 1000;
 }
 
+.loader>div{
+    height: 40vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border:3vw solid ;
+    border-color: black black white white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: loadingAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadingAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 /*------------------------------------------- home --------------------------------------------------*/
 
 .inner_intro{
