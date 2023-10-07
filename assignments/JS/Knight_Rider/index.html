@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNIGHT</title>
+    <link rel="stylesheet" href="assets/js/css/bootstrap.css">
+    <style>
+
+        /* h1{
+            position: absolute;
+            top: -150px;
+            color: red;
+        }
+        hr:nth-child(4){
+            position: absolute;
+            top: -30px;
+            width: 1150px;
+            height: 1vh;
+            background: #3dd5f3;
+        }
+
+        #customRange3{
+            position: absolute;
+            top: 130px;
+            left:770px;
+            width: 200px;
+        }
+
+        #lbl{
+            position: absolute;
+            top: 130px;
+            left: 700px;
+            color: red;
+        }
+
+        button{
+            position: absolute;
+            top: 125px;
+            left: 400px;
+
+        }
+
+        #stop{
+            left: 500px;
+        }
+
+        p{
+            position: absolute;
+            top: -90px;
+            left: 650px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #p{
+            position: absolute;
+            top: -90px;
+            left: 750px;
+            font-size: 20px;
+            color: white;
+        }
+
+        hr:nth-child(12){
+            position: absolute;
+            top: 60px;
+            width: 1150px;
+            height: 1vh;
+            background: #3dd5f3;
+        }
+        body>section{
+            position: relative;
+            top: 400px;
+            gap: 0.5vw;
+            display: flex;
+            justify-content: center;
+        }
+        body>section>div{
+            width: 160px;
+            height: 70px;
+            border-radius: 12px;
+            background: #3dd5f3;
+        }
+        body{
+            background: #2b3035;
+        } */
+    </style>
+</head>
+<body>
+    <main class="container-fluid vh-100 vw-100 bg-dark">
+        <section class="row d-flex justify-content-center align-items-center vw-100 h-25 ">
+            <section class="row d-flex justify-content-center align-items-center vw-100 h-50 ">
+                <h1 class="text-center text-danger">Knight Rider</h1>
+            </section>
+            <section class="col-3 h-50 w-25 d-flex justify-content-center align-items-center mt-3">
+                <span class="h2 text-center text-light">Speed : </span>
+                <span id="speed" class="h2 text-center text-primary">50</span>
+            </section>
+            <section class="col-3 h-50 w-25 d-flex justify-content-center align-items-center mt-3">
+                <h2 class="h2 text-light">Waiting Time :</h2>
+                <h2 id="Waiting_time" class="h2 text-primary">2000</h2>
+            </section>
+        </section>
+        <section id="color_container" class="row d-flex justify-content-center align-items-center vw-100 mt-5" style="height: 35vh;">
+            <div class="cc border border-1" style="width: 175px;height:40%;"></div>
+            <div class="cc border border-1" style="width: 175px;height:40%;"></div>
+            <div class="cc border border-1" style="width: 175px;height:40%;"></div>
+            <div class="cc border border-1" style="width: 175px;height:40%;"></div>
+            <div class="cc border border-1" style="width: 175px;height:40%;"></div>
+            <div class="cc border border-1" style="width: 175px;height:40%;"></div>
+        </section>
+        <section class="row d-flex justify-content-center align-items-center vw-100" style="height: 10vh;">
+            <section class="col-5 h-100  d-flex justify-content-center align-items-center" style="width: 25vw;">
+                <button id="start" type="button" class="btn btn-outline-info m-1">Start</button>
+                <button id="stop" type="button" class="btn btn-outline-danger m-1">Stop</button>
+            </section>
+            <section class="col-5 h-100 d-flex justify-content-center align-items-center" style="width: 25vw;">
+                <label id="lbl" for="ranger" class="form-label text-light m-1">Speed</label>
+                <input type="range" class="form-range" min="50" max="150" id="ranger" value="50">
+            </section>
+        </section>
+        <audio id="rider_audio" loop>
+            <source src="assets/knight_rider_sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <script src="assets/js/js/bootstrap.js"></script>
+
+<script>
+const div_list = document.querySelectorAll(".cc");
+const btnStart = document.getElementById("start");
+const btnStop = document.getElementById("stop");
+const ado = document.getElementById("rider_audio");
+const rangeInput = document.getElementById('ranger');
+const speed = document.getElementById('speed');
+const time = document.getElementById('Waiting_time');
+
+let colors_right = ["#962727", "#ec6666", "#eaadad", "white"];
+let colors_left = ["#962727", "#ec6666", "#eaadad", "white"];
+let setColor_right = [];
+let setColor_left = [];
+
+let interval;
+let rightInterval;
+let leftInterval;
+
+let count = 0;
+let animate_time = 50;
+let wait_time = 2000;
+let root = true;
+let animaTime;
+
+
+function setLeft() {
+    clearInterval(leftInterval);
+    leftInterval = setInterval(function () {
+        setColor_left.unshift(colors_left[count]);
+        for (let i = 0; i < 6; i++) {
+            div_list[5 - i].style.backgroundColor = setColor_left[i];
+        }
+        count++;
+    }, animate_time);
+    clearInterval(rightInterval);
+    setColor_left = [];
+    count = 0;
+}
+
+function setRight() {
+    clearInterval(rightInterval);
+    rightInterval = setInterval(function () {
+        setColor_right.unshift(colors_right[count]);
+        for (let i = 0; i < 6; i++) {
+            div_list[i].style.backgroundColor = setColor_right[i];
+        }
+        count++;
+    }, animate_time);
+    clearInterval(leftInterval);
+    setColor_right = [];
+    count = 0;
+}
+
+function animate() {
+    if (root) {
+        setRight();
+        root = false;
+    } else {
+        setLeft();
+        root = true;
+    }
+}
+
+btnStart.addEventListener('click', function () {
+    updateValue();
+    ado.play();
+});
+
+function updateValue() {
+    animate_time = rangeInput.value;
+    wait_time = animate_time * 40;
+
+    speed.textContent = rangeInput.value;
+    time.textContent = wait_time;
+    startAnima();
+}
+
+function startAnima() {
+    clearInterval(interval);
+    animaTime = animate_time * 12;
+    console.log(animaTime)
+    interval = setInterval(animate, animaTime);
+}
+
+btnStop.addEventListener('click', function () {
+    clearInterval(interval);
+    ado.pause();
+});
+
+rangeInput.addEventListener('input', updateValue);
+
+</script>
+
+
+</body>
+</html>
