@@ -46,99 +46,95 @@
 
     <script src="assets/js/js/bootstrap.js"></script>
 
-<script>
-const div_list = document.querySelectorAll(".cc");
-const btnStart = document.getElementById("start");
-const btnStop = document.getElementById("stop");
-const ado = document.getElementById("rider_audio");
-const rangeInput = document.getElementById('ranger');
-const speed = document.getElementById('speed');
-const time = document.getElementById('Waiting_time');
+    <script>
+        const div_list = document.querySelectorAll(".cc");
+        const btnStart = document.getElementById("start");
+        const btnStop = document.getElementById("stop");
+        const ado = document.getElementById("rider_audio");
+        const rangeInput = document.getElementById('ranger');
+        const speed = document.getElementById('speed');
+        const time = document.getElementById('Waiting_time');
 
-let colors_right = ["#d90816", "#f72634", "#f9626c", "white"];
-let colors_left = ["#d90816", "#f72634", "#f9626c", "white"];
-let setColor_right = [];
-let setColor_left = [];
+        let colors_right = ["#d90816", "#f72634", "#f9626c", "white"];
+        let colors_left = ["#d90816", "#f72634", "#f9626c", "white"];
+        let setColor_right = [];
+        let setColor_left = [];
 
-let interval;
-let rightInterval;
-let leftInterval;
+        let interval;
+        let rightInterval;
+        let leftInterval;
 
-let count = 0;
-let animate_time = 50;
-let wait_time = 2000;
-let root = true;
-let animaTime;
+        let count = 0;
+        let animate_time = 50;
+        let wait_time = 2000;
+        let root = true;
+        let animaTime;
 
-
-function setLeft() {
-    clearInterval(leftInterval);
-    leftInterval = setInterval(function () {
-        setColor_left.unshift(colors_left[count]);
-        for (let i = 0; i < 6; i++) {
-            div_list[5 - i].style.backgroundColor = setColor_left[i];
+        function setLeft() {
+            clearInterval(leftInterval);
+            leftInterval = setInterval(function () {
+                setColor_left.unshift(colors_left[count]);
+                for (let i = 0; i < 6; i++) {
+                    div_list[5 - i].style.backgroundColor = setColor_left[i];
+                }
+                count++;
+            }, animate_time);
+            clearInterval(rightInterval);
+            setColor_left = [];
+            count = 0;
         }
-        count++;
-    }, animate_time);
-    clearInterval(rightInterval);
-    setColor_left = [];
-    count = 0;
-}
 
-function setRight() {
-    clearInterval(rightInterval);
-    rightInterval = setInterval(function () {
-        setColor_right.unshift(colors_right[count]);
-        for (let i = 0; i < 6; i++) {
-            div_list[i].style.backgroundColor = setColor_right[i];
+        function setRight() {
+            clearInterval(rightInterval);
+            rightInterval = setInterval(function () {
+                setColor_right.unshift(colors_right[count]);
+                for (let i = 0; i < 6; i++) {
+                    div_list[i].style.backgroundColor = setColor_right[i];
+                }
+                count++;
+            }, animate_time);
+             clearInterval(leftInterval);
+            setColor_right = [];
+            count = 0;
         }
-        count++;
-    }, animate_time);
-    clearInterval(leftInterval);
-    setColor_right = [];
-    count = 0;
-}
 
-function animate() {
-    if (root) {
-        setRight();
-        root = false;
-    } else {
-        setLeft();
-        root = true;
-    }
-}
+        function animate() {
+            if (root) {
+                setRight();
+                root = false;
+            } else {
+                setLeft();
+                root = true;
+            }
+        }
 
-btnStart.addEventListener('click', function () {
-    updateValue();
-    ado.play();
-});
+        btnStart.addEventListener('click', function () {
+            updateValue();
+            ado.play();
+        });
 
-function updateValue() {
-    animate_time = rangeInput.value;
-    wait_time = animate_time * 40;
+        function updateValue() {
+            animate_time = rangeInput.value;
+            wait_time = animate_time * 40;
 
-    speed.textContent = rangeInput.value;
-    time.textContent = wait_time;
-    startAnima();
-}
+            speed.textContent = rangeInput.value;
+            time.textContent = wait_time;
+            startAnima();
+        }
 
-function startAnima() {
-    clearInterval(interval);
-    animaTime = animate_time * 12;
-    console.log(animaTime)
-    interval = setInterval(animate, animaTime);
-}
+        function startAnima() {
+            clearInterval(interval);
+            animaTime = animate_time * 12;
+            interval = setInterval(animate, animaTime);
+        }
 
-btnStop.addEventListener('click', function () {
-    clearInterval(interval);
-    ado.pause();
-});
+        btnStop.addEventListener('click', function () {
+            clearInterval(interval);
+            ado.pause();
+        });
 
-rangeInput.addEventListener('input', updateValue);
+        rangeInput.addEventListener('input', updateValue);
 
-</script>
-
-
+    </script>
 </body>
 </html>
