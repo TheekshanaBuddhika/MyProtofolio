@@ -10,7 +10,7 @@
     <main class="container-fluid vh-100 vw-100 bg-light d-flex align-items-center justify-content-center">
         <section class="container-fluid h-75 w-25 bg-secondary d-flex flex-column rounded-5 border border-2 shadow align-items-center justify-content-center ">
             <!-- dispaly -->
-            <div class="row mb-3 d-flex justify-content-end align-items-center fs-2 fw-bold text-light" style="height:80px;width: 250px;">565656
+            <div id="display" class="row mb-3 d-flex justify-content-end align-items-center fs-1 fw-bold text-light" style="height:80px;width: 250px;">0
             </div>
             <!-- number-pad -->
             <div class="row d-flex align-items-center justify-content-center" style="height:300px;width: 240px;">
@@ -50,5 +50,25 @@
             </div>
         </section>
     </main>
+
+    <script>
+        const btn_list = document.querySelectorAll('button');
+        let display =document.querySelector('#display');
+        console.log(btn_list);
+
+        for (let btn in btn_list) {
+            btn_list[btn].addEventListener('click',function(e) {
+                if (btn==15){
+                    display.innerHTML = '';
+                }else if (btn==16){
+                    alert();
+                }else{
+                    display.innerText = display.innerText + e.target.innerText;
+
+                }
+        });
+    }
+
+    </script>
 </body>
 </html>
