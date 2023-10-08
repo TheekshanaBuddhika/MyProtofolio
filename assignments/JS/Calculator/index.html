@@ -58,16 +58,23 @@
 
         for (let btn in btn_list) {
             btn_list[btn].addEventListener('click',function(e) {
+                if(display.innerText == "0"){
+                    display.innerText = '';
+                }
                 if (btn==15){
                     display.innerHTML = '';
                 }else if (btn==16){
-                    alert();
+                    calc();
                 }else{
                     display.innerText = display.innerText + e.target.innerText;
 
                 }
         });
-    }
+        }
+
+        function calc(){
+                display.innerText = eval(display.innerText);
+        }
 
     </script>
 </body>
