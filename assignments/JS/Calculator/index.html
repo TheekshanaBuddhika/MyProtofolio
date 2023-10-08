@@ -7,11 +7,46 @@
     <title>Calculator</title>
 </head>
 <body>
-    <main class="container-fluid vh-100 vw-100 bg-dark d-flex align-items-center justify-content-center">
-        <section class="container-fluid h-75 w-25 bg-info d-flex flex-column rounded-5 border border-2 shadow align-items-center justify-content-center ">
-            <div class="row bg-light-subtle mb-3 d-flex justify-content-end align-items-center fs-2 rounded-2 border border-2 fw-bold" style="height:80px;width: 250px;">565656</div>
-            <div class="row d-flex flex-column " style="height:300px;width: 250px;">
-
+    <main class="container-fluid vh-100 vw-100 bg-light d-flex align-items-center justify-content-center">
+        <section class="container-fluid h-75 w-25 bg-secondary d-flex flex-column rounded-5 border border-2 shadow align-items-center justify-content-center ">
+            <!-- dispaly -->
+            <div class="row mb-3 d-flex justify-content-end align-items-center fs-2 fw-bold text-light" style="height:80px;width: 250px;">565656
+            </div>
+            <!-- number-pad -->
+            <div class="row d-flex align-items-center justify-content-center" style="height:300px;width: 240px;">
+                <div class="row d-flex justify-content-between align-items-center p-0 m-0" style="height: 60px;width: 240px;">
+                    <button type="button" class="btn btn-outline-warning rounded-circle fs-2 fw-bold col-3" style="height: 59px; width: 59px;">+</button>
+                    <button type="button" class="btn btn-outline-warning rounded-circle fs-2 fw-bold col-3" style="height: 59px; width: 59px;">-</button>
+                    <button type="button" class="btn btn-outline-warning rounded-circle fs-2 fw-bold col-3" style="height: 59px; width: 59px;">*</button>
+                    <button type="button" class="btn btn-outline-warning rounded-circle fs-2 fw-bold col-3" style="height: 59px; width: 59px;">/</button>
+                </div>
+                <div class="row p-0 m-0" style="height:240px;width: 240px;">
+                   <div class="col-9 p-0 m-0">
+                    <div class="row d-flex justify-content-between align-items-center p-0 m-0" style="height: 60px;width: 180px;">
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">7</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">8</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">9</button>
+                    </div>
+                    <div class="row d-flex justify-content-between align-items-center p-0 m-0" style="height: 60px;width: 180px;">
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">4</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">5</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">6</button>
+                    </div>
+                    <div class="row d-flex justify-content-between align-items-center p-0 m-0" style="height: 60px;width: 180px;">
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">1</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">2</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">3</button>
+                    </div>
+                    <div class="row d-flex justify-content-between align-items-center p-0 m-0" style="height: 60px;width: 180px;">
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">0</button>
+                        <button type="button" class="btn btn-outline-light fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">.</button>
+                        <button type="button" class="btn btn-outline-danger fs-2 fw-bold col-3 rounded-4" style="height: 55px; width: 55px;">C</button>
+                    </div>
+                   </div>
+                   <div class="col-3 d-flex align-items-center justify-content-center p-0">
+                        <button type="button" class="btn btn-outline-warning rounded-2 fs-2 fw-bold col-3" style="height: 235px; width: 55px;">=</button>
+                   </div>
+                </div>
             </div>
         </section>
     </main>
